@@ -10,6 +10,7 @@
   align-items: center;
 }
 
+
 .gridText{
   display: flex;
   align-items: center;
@@ -63,4 +64,10 @@
 }
 .icons i:hover{
   transform: scale(1.2);  
+}
+
+@media screen and (max-width: 960px){
+  .gridImage img{
+    display: none;
+  }
 }
