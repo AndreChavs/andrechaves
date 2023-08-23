@@ -13,32 +13,35 @@ interface ValuesProps{
   mensagem: string;
 }
 
-const ContactForm = () => {
-  const formRef = React.useRef()
+const ContactForm = () => {  
   const [enviado, setEnviado] = React.useState<boolean>(false)
+
+  const formRef = React.useRef<HTMLFormElement>()
 
   const initialValue = {
     nome:'',    
     email:'',
     mensagem:''
   }
-
-  async function handlerSubmit(values:ValuesProps,{resetForm}: any) {
-    console.log(values)    
-    const emailSend = await emailjs.sendForm('gemailMensagem', 'template_0z9urmf', formRef.current , 'VmzPknwz6br_5Tjvh')
-    if(emailSend.text === 'OK' && emailSend.status === 200){
-      setEnviado(true)
-      alert("Email Enviado Com Sucesso !")
-    } else {
-      setEnviado(false)
-      alert("Falha ao Enviar o Email !")
-    }  
+  
+  async function handlerSubmit(values:ValuesProps,{resetForm}: any) {    
+    
+    if(formRef.current){
+      const emailSend = await emailjs.sendForm('gemailMensagem', 'template_0z9urmf', formRef.current , 'VmzPknwz6br_5Tjvh');
+      if(emailSend.text === 'OK' && emailSend.status === 200){
+        setEnviado(true)
+        alert("Email Enviado Com Sucesso !")
+      } else {
+        setEnviado(false)
+        alert("Falha ao Enviar o Email !")
+      }  
+    }
     resetForm()
   }
 
   return (
-    <Formik initialValues={initialValue} onSubmit={handlerSubmit} validate={validateContactForm}>
-      <Form ref={formRef}>
+    <Formik initialValues={initialValue} onSubmit={handlerSubmit} validate={validateContactForm} >
+      <Form ref={formRef as React.MutableRefObject<HTMLFormElement>}>
         <Container className={styles.containerForm}>
           <Grid06 className={styles.box}>          
             <Field className={styles.input} 

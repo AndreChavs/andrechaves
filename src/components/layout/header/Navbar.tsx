@@ -56,7 +56,7 @@ export const NavList = ({mobile, setMobile}: MobileMenuProps) => {
     {text: 'Home', rota: '/'},
     {text: 'About', rota: '#about'},
     {text: 'Skills', rota: '#skills'},
-    {text: 'Projects', rota: '#projects'},
+    // {text: 'Projects', rota: '#projects'},
     {text: 'Contato', rota: '#contato'},
   ]
   return (

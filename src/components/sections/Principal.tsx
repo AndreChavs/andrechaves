@@ -29,7 +29,7 @@ const Principal = () => {
             </p>            
             <div className={styles.containerIcons}>
               <div className={styles.icons}>
-              <i className="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-linkedin-in"></i>
               </div>
               <div className={styles.icons}>
                 <i className="fa-brands fa-instagram"></i>
