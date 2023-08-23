@@ -1,0 +1,36 @@
+.section{
+  padding: 60px 0;
+  background: #1F252E;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family:'Poppins', sans-serif;
+}
+
+.subTitle{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-family:'Poppins', sans-serif;
+  color: #00EFFE;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.images img{
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
+.images p{
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 1em;  
+}

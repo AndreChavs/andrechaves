@@ -1,0 +1,66 @@
+.sectionPrincipal{
+  height: 100vh;
+  display: flex;
+  background:#1F252E;
+}
+
+.gridImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridText{
+  display: flex;
+  align-items: center;
+}
+
+.txtNome{
+  font-size: 60px;
+  font-family:'Poppins', sans-serif;
+}
+
+.txtAnimation{
+  font-size: 26px;
+}
+.txtAnimation span{
+  color: #00EFFE;
+}
+.txtParagraph{
+  padding: 30px 0;
+}
+
+.containerWrap{
+  flex-wrap: wrap;
+}
+
+.containerIcons{
+  display: flex;
+}
+
+.icons{
+  width: 80px;
+  height: 80px;
+  border: 3px solid;
+  border-radius: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in .3s;
+}
+
+.icons i{
+  font-size: 2em;
+  padding: 25px;
+  color: white;
+  transition: ease-in .3s;
+}
+
+.icons:hover, .icons i:hover{
+  color: #00EFFE;
+  transition: ease-in .3s;
+}
+.icons i:hover{
+  transform: scale(1.2);  
+}

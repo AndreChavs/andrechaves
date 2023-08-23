@@ -1,0 +1,49 @@
+.containerForm{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box{
+  margin: 10px auto;
+}
+.input{
+  width: 100%;
+  border: 1px solid #707070;
+  background: #323846;
+  padding: 10px 8px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: inset 3px 3px 6px #000;
+}
+.input::placeholder{
+  opacity: .50;
+}
+
+.textAreaInput{
+  width: 100%;
+  height: 115px;
+  border: 1px solid #707070;
+  background: #323846;
+  padding: 10px 8px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: inset 3px 3px 6px #000;
+}
+
+.btn{
+  margin-top: 20px;
+  padding: 10px 50px;
+  background: #00EFFE;
+  color: #000;
+  border: 1px solid;
+}
+.btn:active{
+  color: #fff;
+  background: #323846;
+  transition: .2s;
+}
+.btn:disabled{
+  background: #707070;
+}

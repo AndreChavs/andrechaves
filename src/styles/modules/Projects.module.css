@@ -1,0 +1,15 @@
+.section{
+  background-color: #323846;
+  padding: 60px 0;
+}
+.containerProjects{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family:'Poppins', sans-serif;
+}
