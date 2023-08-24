@@ -4,6 +4,7 @@ import styles from '@/styles/modules/Principal.module.css'
 import Container from '../layout/Container'
 import { Grid06 } from '../layout/Grids'
 import Typed from 'typed.js'
+import Link from 'next/link'
 
 const Principal = () => {
   const el = React.useRef(null);
@@ -29,16 +30,22 @@ const Principal = () => {
             </p>            
             <div className={styles.containerIcons}>
               <div className={styles.icons}>
-                <i className="fa-brands fa-linkedin-in"></i>
+                <Link href={"https://www.linkedin.com/in/andr%C3%A9-chaves-a9a69b1a7/"} legacyBehavior>
+                  <a target={"_blank"}><i className="fa-brands fa-linkedin-in"></i></a>
+                </Link>                
               </div>
               <div className={styles.icons}>
                 <i className="fa-brands fa-instagram"></i>
               </div>
               <div className={styles.icons}>
-                <i className="fa-brands fa-whatsapp"></i>
+                <Link href={"https://wa.me/5593984394640"}  legacyBehavior>
+                  <a target={"_blank"}><i className="fa-brands fa-whatsapp"></i></a>
+                </Link>
               </div>
               <div className={styles.icons}>
-                <i className="fa-brands fa-github"></i>
+                <Link href={"https://github.com/AndreChavs"} legacyBehavior>
+                  <a target={"_blank"}><i className="fa-brands fa-github"></i></a>
+                </Link>
               </div>
             </div>
           </div>
