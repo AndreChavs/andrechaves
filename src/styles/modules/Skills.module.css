@@ -3,6 +3,10 @@
   background: #1F252E;
 }
 
+.containerSkills{
+  flex-wrap: wrap;
+}
+
 .title{
   text-align: center;
   margin-bottom: 40px;
