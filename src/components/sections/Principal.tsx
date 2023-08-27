@@ -22,7 +22,7 @@ const Principal = () => {
       <Container className={styles.containerWrap}>
         <Grid06 className={styles.gridText}>
           <div>            
-            <p>Hello, it&#8217;s me</p>
+            <p className={styles.txt}>Hello, it&#8217;s me</p>
             <h1 className={styles.txtNome}>André Chaves</h1>
             <p className={styles.txtAnimation}>And i&#8217;m a <span ref={el} /></p>            
             <p className={styles.txtParagraph}>

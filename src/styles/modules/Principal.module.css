@@ -10,7 +10,6 @@
   align-items: center;
 }
 
-
 .gridText{
   display: flex;
   align-items: center;
@@ -19,6 +18,7 @@
 .txtNome{
   font-size: 60px;
   font-family:'Poppins', sans-serif;
+  color: #fff;
 }
 
 .txtAnimation{
@@ -27,8 +27,12 @@
 .txtAnimation span{
   color: #00EFFE;
 }
+.txt{
+  color: #fff;
+}
 .txtParagraph{
   padding: 30px 0;
+  color: #fff;
 }
 
 .containerWrap{
