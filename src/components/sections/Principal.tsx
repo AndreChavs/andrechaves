@@ -35,7 +35,9 @@ const Principal = () => {
                 </Link>                
               </div>
               <div className={styles.icons}>
-                <i className="fa-brands fa-instagram"></i>
+                <Link href={"https://www.instagram.com/dev.andrezchaves/"} legacyBehavior>
+                  <a target={"_blank"}><i className="fa-brands fa-instagram"></i></a>
+                </Link>
               </div>
               <div className={styles.icons}>
                 <Link href={"https://wa.me/5593984394640"}  legacyBehavior>

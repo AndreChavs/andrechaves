@@ -41,7 +41,7 @@ const Skills = () => {
           <div className={styles.images}>
             <div>
               <Image src='/images/react.png' width={90} height={90} alt='React.js' />
-              <p>React.js</p>
+              <p>React Native</p>
             </div>
             <div>
               <Image src='/images/nodeJS.png' width={90} height={90} alt='Node.js' />
@@ -54,11 +54,7 @@ const Skills = () => {
             <div>
               <Image src='/images/Nestjs.png' width={90} height={90} alt='Nest.js' />
               <p>Nest.js</p>
-            </div>
-            <div>
-              <Image src='/images/Docker.png' width={90} height={90} alt='Docker' />
-              <p>Docker</p>
-            </div>        
+            </div>                    
           </div>
         </Grid04>
         <Grid04>
@@ -91,6 +87,10 @@ const Skills = () => {
             <div>
               <Image src='/images/prisma.png' width={90} height={90} alt='Prisma' />
               <p>Prisma</p>
+            </div>
+            <div>
+              <Image src='/images/Docker.png' width={90} height={90} alt='Docker' />
+              <p>Docker</p>
             </div>       
           </div>
         </Grid04>
