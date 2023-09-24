@@ -41,7 +41,7 @@ const Skills = () => {
           <div className={styles.images}>
             <div>
               <Image src='/images/react.png' width={90} height={90} alt='React.js' />
-              <p>React Native</p>
+              <p>React.js</p>
             </div>
             <div>
               <Image src='/images/nodeJS.png' width={90} height={90} alt='Node.js' />
