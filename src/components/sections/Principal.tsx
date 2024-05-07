@@ -26,7 +26,7 @@ const Principal = () => {
             <h1 className={styles.txtNome}>André Chaves</h1>
             <p className={styles.txtAnimation}>And i&#8217;m a <span ref={el} /></p>            
             <p className={styles.txtParagraph}>
-            Hello and welcome to my digital world, where the art of programming meets creativity and functionality. I&#8217;m a Fullstack Web Analyst and Developer passionate about turning ideas into virtual reality through code. My journey in this vast universe of the web is marked by the constant search for excellence and innovation.  
+            E aí, tudo bem? Se você está procurando por um profissional de TI com amplo conhecimento em informática, programação e desenvolvimento de aplicações web e mobile, você está no lugar certo. Deixe-me contar um pouco sobre mim e como posso contribuir para alavancar seus projetos com expertise em diversas áreas da tecnologia.  
             </p>            
             <div className={styles.containerIcons}>
               <div className={styles.icons}>
