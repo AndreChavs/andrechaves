@@ -35,11 +35,12 @@ const Me = () => {
       <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Integrações e Desenvolvimento de Sistemas:</h2> <p>Criação de soluções de software sob medida para atender às necessidades específicas do seu negócio.</p></div>
       <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Criação de Sites e Landing Pages:</h2> <p>Desenvolvo sites personalizados e responsivos, além de landing pages eficazes que capturam leads e aumentam suas taxas de conversão.</p> </div>
       
+      
       <ReactTooltip
         id="my-tooltip-1"
         place="right"
         variant="info"
-        content="clique!"
+        content="clique aqui!"
       />
       <div
         data-tooltip-id="my-tooltip-1" 
