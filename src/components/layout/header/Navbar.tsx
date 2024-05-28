@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '@/styles/modules/Navbar.module.css'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from 'primereact/button'; 
 
 interface MobileMenuProps {
   mobile: boolean;
@@ -15,14 +17,16 @@ const Navbar = () => {
       <Logo />
       <MobileMenu mobile={mobile} setMobile={setMobile}/>
       <NavList mobile={mobile} setMobile={setMobile}/>
+      <Button label="Contato" icon="pi pi-user" className={styles.btn}/>
     </nav>
   )
 }
 
+
 export const Logo = () => {
   return (
     <div className={styles.logo}>
-      André Chaves
+      <Image src={"/logo.png"} width={292} height={160} alt='logo actech'/>
     </div>
   )
 }
@@ -54,10 +58,10 @@ export const NavList = ({mobile, setMobile}: MobileMenuProps) => {
   }, [mobile])
   const links: {text: string, rota: string}[] = [
     {text: 'Home', rota: '/'},
-    {text: 'About', rota: '#about'},
-    {text: 'Skills', rota: '#skills'},
+    {text: 'Serviços', rota: '/#servicos'},
+    {text: 'Cursos', rota: '/cursos'},
     // {text: 'Projects', rota: '#projects'},
-    {text: 'Contato', rota: '#contato'},
+    {text: 'Blog', rota: '/posts'},
   ]
   return (
     <ul className={classModule}>

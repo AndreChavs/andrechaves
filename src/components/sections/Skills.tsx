@@ -1,100 +1,138 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import Container from '../layout/Container'
 import styles from '@/styles/modules/Skills.module.css'
 import { Grid04 } from '../layout/Grids'
 import Image from 'next/image'
-import html5 from '/public/images/html5.png'
+// import html5 from '/public/images/html5.png'
 
-const Skills = () => {
+interface FMProps{
+  children: React.JSX.Element,
+  x?: number, y?: number, index:number
+}
+
+const Skills = () => {  
+
+  const srcL = [
+    {src:'/images/CSS3.png'},
+    {src:'/images/html5.png'},
+    {src:'/images/javascript.png'},
+    {src:'/images/typescript.png'},
+    {src:'/images/Rust.png'},
+  ]
+
+  const srcD = [
+    {src:'/images/adobexd.png'},
+    {src:'/images/SASS.png'},
+    {src:'/images/MUI.png'},
+    {src:'/images/tailwindcss.png'},
+    {src:'/images/mysql.png'},
+    {src:'/images/mongoDB.png'},
+    {src:'/images/prisma.png'},
+    {src:'/images/Docker.png'},
+  ]
+
+  const srcS = [
+    {src:'/images/react.png'},
+    {src:'/images/nodeJS.png'},
+    {src:'/images/Nextjs.png'},
+    {src:'/images/Nestjs.png'},
+  ]
+
+  
+
+  const AnimationComponent = ({children, x, y, index}:FMProps) => {
+    const randomNumber = Math.floor(Math.random() * 201) - 100;
+    const durantion = Math.floor(Math.random() * 5) + 1;
+    return (
+    <motion.div
+      initial={{ x, y }}
+      whileHover={{ scale: 1.2 }}      
+      whileTap={{ scale: 0.8 }}
+      drag    
+      dragConstraints={{ left: -50, right: 50, top: -100, bottom: 100 }}
+      animate={{
+        opacity: 1,
+        // rotate: 360,
+        x: [durantion, randomNumber, -100, 0],
+        y: [0, 50, randomNumber, durantion],
+      }}
+      transition={{
+        duration: durantion + 1,
+        repeat: Infinity,       
+        ease: 'easeInOut',
+      }}
+      style={{
+        width: 100,
+        height: 100,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        borderRadius: '50%',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
+      }}
+    >
+      {children}
+    </motion.div>
+  )}
+
+  
   
   return (
     <section id='skills' className={styles.section}>
-        <h1 className={styles.title}>Skills</h1>
-      <Container className={styles.containerSkills}>
-        <Grid04>
-          <h2 className={styles.subTitle}>Lenguages</h2>
-          <div className={styles.images}>
-            <div>
-              <Image src={html5.src} width={90} height={90} alt='HTML5' />
-              <p>html 5</p>
-            </div>
-            <div>
-              <Image src='/images/CSS3.png' width={90} height={90} alt='CSS 3' />
-              <p>CSS 3</p>
-            </div>
-            <div>
-              <Image src='/images/javascript.png' width={90} height={90} alt='Javascript' />
-              <p>Javascript</p>
-            </div>
-            <div>
-              <Image src='/images/typescript.png' width={90} height={90} alt='Typescript' />
-              <p>Typescript</p>
-            </div>
-            <div>
-              <Image src='/images/Rust.png' width={90} height={90} alt='Rust' />
-              <p>Rust</p>
-            </div>                      
-          </div>
-        </Grid04>
-        <Grid04>
-          <h2 className={styles.subTitle}>Stack</h2>
-          <div className={styles.images}>
-            <div>
-              <Image src='/images/react.png' width={90} height={90} alt='React.js' />
-              <p>React.js</p>
-            </div>
-            <div>
-              <Image src='/images/nodeJS.png' width={90} height={90} alt='Node.js' />
-              <p>Node.js</p>
-            </div>
-            <div>
-              <Image src='/images/Nextjs.png' width={90} height={90} alt='Next.js' />
-              <p>Next.js</p>
-            </div>
-            <div>
-              <Image src='/images/Nestjs.png' width={90} height={90} alt='Nest.js' />
-              <p>Nest.js</p>
-            </div>                    
-          </div>
-        </Grid04>
-        <Grid04>
-          <h2 className={styles.subTitle}>Others</h2>
-          <div className={styles.images}>
-            <div>
-              <Image src='/images/adobexd.png' width={90} height={90} alt='AdobeXD' />
-              <p>AdobeXD</p>
-            </div>
-            <div>
-              <Image src='/images/SASS.png' width={90} height={90} alt='SASS' />
-              <p>SASS</p>
-            </div>   
-            <div>
-              <Image src='/images/MUI.png' width={90} height={90} alt='Material UI' />
-              <p>Material UI</p>
-            </div>
-            <div>
-              <Image src='/images/tailwindcss.png' width={90} height={90} alt='Tailwind' />
-              <p>Tailwind</p>
-            </div>
-            <div>
-              <Image src='/images/mysql.png' width={90} height={90} alt='MYSQL' />
-              <p>MySQL</p>
-            </div>
-            <div>
-              <Image src='/images/mongoDB.png' width={90} height={90} alt='MongoDB' />
-              <p>MongoDB</p>
-            </div>
-            <div>
-              <Image src='/images/prisma.png' width={90} height={90} alt='Prisma' />
-              <p>Prisma</p>
-            </div>
-            <div>
-              <Image src='/images/Docker.png' width={90} height={90} alt='Docker' />
-              <p>Docker</p>
-            </div>       
-          </div>
-        </Grid04>
-      </Container>
+        <h1 className={styles.title}>Habilidades</h1>
+        <p className={styles.subTitle}>FullStack Developer</p>
+        <Container style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap:'wrap',
+          height:'100%'
+        }}>          
+            <Grid04 style={{
+              display:"flex",
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexWrap:'wrap',
+            }}>
+              {srcL.map((item, index) => {              
+                return (
+                  <AnimationComponent key={item.src} index={index}>
+                    <Image src={item.src} width={90} height={90} alt='tech' style={{ pointerEvents: 'none', display:"block" }}/>
+                  </AnimationComponent>
+                )              
+              })}
+            </Grid04>
+            <Grid04 style={{
+              display:"flex",
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexWrap:'wrap',
+            }}>
+              {srcS.map((item, index) => {              
+                return (
+                  <AnimationComponent key={item.src} index={index}>
+                    <Image src={item.src} width={90} height={90} alt='tech' style={{ pointerEvents: 'none', display:"block" }}/>
+                  </AnimationComponent>
+                )              
+              })}
+            </Grid04>
+            <Grid04 style={{
+              display:"flex",
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexWrap:'wrap',
+            }}>
+              {srcD.map((item, index) => {              
+                return (
+                  <AnimationComponent key={item.src} index={index}>
+                    <Image src={item.src} width={90} height={90} alt='tech' style={{ pointerEvents: 'none', display:"block" }}/>
+                  </AnimationComponent>
+                )              
+              })}
+            </Grid04>
+                           
+        </Container>
     </section>
   )
 }

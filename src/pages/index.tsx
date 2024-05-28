@@ -1,9 +1,11 @@
 import Contato from '@/components/sections/Contato'
 import Principal from '@/components/sections/Principal'
-import Projects from '@/components/sections/Projects'
 import Skills from '@/components/sections/Skills'
-import Sobre from '@/components/sections/Sobre'
+import Servicos from '@/components/sections/Servicos'
 import Head from 'next/head'
+import Me from '@/components/sections/Me'
+import Footer from '@/components/layout/footer/Footer'
+import Testimonials from '@/components/sections/Testimonials'
 
 export default function Home() {
   return (
@@ -15,10 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Principal />
-      <Sobre />
+      <Servicos />
+      <Me />
       <Skills />
-      {/* <Projects /> */}
-      <Contato />
+      <Testimonials />      
+      {/* <Contato /> */}
+      <Footer />
     </>
   )
 }

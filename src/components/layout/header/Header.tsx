@@ -7,7 +7,7 @@ const Header = ({className}: {className: string}) => {
     width: '100%',
     position: 'fixed',
     top: '0px',
-    background: '#1F252E',
+    background: '#0d0d0d',
     zIndex: '99',    
   }
   return (

@@ -1,32 +1,54 @@
 .sectionPrincipal{
   height: 100vh;
   display: flex;
-  background:#1F252E;
+  background:var(--second);
 }
 
-.gridImage{
+.gridImage, .gridImageActive{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transition: 2.3s ease-in;
+}
+.gridImage{
+  right: -30%;
+  opacity: 0;
+}
+.gridImageActive{
+  right: 0;
+  opacity: 1;
 }
 
-.gridText{
+.gridText, .gridTextActive{
   display: flex;
   align-items: center;
+  position: relative;
+  transition: 2.3s ease-in;
+}
+
+.gridText{  
+  left: -30%;
+  opacity: 0;    
+}
+.gridTextActive{
+  left: 0;
+  opacity: 1;  
 }
 
 .txtNome{
-  font-size: 60px;
-  font-family:'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #fff;
+  margin-bottom: .5rem;
 }
 
-.txtAnimation{
-  font-size: 26px;
-  color: #fff;
-}
+
 .txtAnimation span{
-  color: #00EFFE;
+  font-size: 1.4rem;
+  color: var(--ternary);
+  font-weight: 500;
 }
 .txt{
   color: #fff;
@@ -34,19 +56,23 @@
 .txtParagraph{
   padding: 30px 0;
   color: #fff;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 .containerWrap{
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .containerIcons{
   display: flex;
+  justify-content: center;
 }
 
 .icons{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border: 3px solid;
   border-radius: 100%;
   margin: 10px;
@@ -64,11 +90,24 @@
 }
 
 .icons:hover, .icons i:hover{
-  color: #00EFFE;
+  color: var(--ternary);
   transition: ease-in .3s;
 }
 .icons i:hover{
   transform: scale(1.2);  
+}
+
+.canvas{
+  display: block;
+  position: absolute;
+  background-color: var(--second);
+  z-index: 0;  
+}
+
+.iframe{
+  pointer-events: none;  
+  transform: scale(1.3);
+  background-color: transparent;
 }
 
 @media screen and (max-width: 960px){

@@ -1,6 +1,8 @@
 .section{
+  border-top: 5px solid var(--primary);
   padding: 60px 0;
-  background: #1F252E;
+  background: rgb(13,13,13);
+  background: linear-gradient(180deg, rgba(13,13,13,1) 25%, rgba(3,74,166,1) 100%);
 }
 
 .containerSkills{
@@ -8,19 +10,17 @@
 }
 
 .title{
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center;  
   font-size: 40px;
-  font-family:'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 
 .subTitle{
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 28px;
-  font-family:'Poppins', sans-serif;
-  color: #00EFFE;
+  color: var(--primary);
+  font-size: 1rem;  
+  margin: .2rem .3rem;
 }
 
 .images{

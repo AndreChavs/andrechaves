@@ -17,10 +17,10 @@
 
 @media screen and (max-width: 767px) {
   .grid03{
-    width: calc(50% - 20px);
+    width: calc(100% - 20px);
   }
   .grid04{
-    width: calc(50% - 20px);
+    width: calc(100% - 20px);
   }
   
   .grid01, .grid02, .grid05, .grid06,
