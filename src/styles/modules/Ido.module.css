@@ -30,8 +30,7 @@
 }
 
 .ballon{
-  max-width: 420px;
-  width: 360px;
+  width: 420px; 
   padding: .5rem;
   background-color: #ffffff8d;
   color: var(--second);
@@ -131,8 +130,7 @@
   height: 0;
   position: absolute;
   bottom: -1.3rem;
-  left: 1.6rem;
-  /* border-left: 2px solid transparent; */
+  left: 1.6rem;  
   border-right: 17px solid transparent;
   border-top: 17px solid #949494;
 }
@@ -205,6 +203,9 @@
 @media screen and (max-width: 767px) {
   .section{    
     height: 100%;    
+  }
+  .ballon{
+    width: 360px;
   }
   .ballon p{
     display: none;
