@@ -10,6 +10,14 @@ import Link from 'next/link'
 
 const Footer = () => {
 
+  const links: {text: string, rota: string}[] = [
+    {text: 'Home', rota: '/'},
+    {text: 'Serviços', rota: '/#servicos'},
+    {text: 'Cursos', rota: '/cursos'},
+    // {text: 'Projects', rota: '#projects'},
+    {text: 'Blog', rota: '/posts'},
+  ]
+
   const icons = [
     {
       href:'https://www.linkedin.com/in/andr%C3%A9-chaves-a9a69b1a7/',
@@ -34,17 +42,27 @@ const Footer = () => {
       <footer className={styles.footer}>
         <h1>Vamos Impulsionar Seu Negócio!</h1>
         <p>Entre em contato para descobrir como minhas soluções podem transformar sua presença digital e aumentar seus resultados.</p>
-        
+        <Button label="Fale com o Especialista" icon="pi pi-whatsapp" className={styles.btn}/>
         <Container className={styles.fContainer}>
           <Grid04>
             <LogoSvg />
           </Grid04>
           <Grid04>
             <h3>ACTECH</h3>
-            <address>Endereço: Rua wilson dias da fonseca, 561 - centro</address>
+            <address>Endereço: Rua wilson dias da fonseca, 561 - centro <br /> <strong>Santarém - PA</strong></address>
           </Grid04>
           <Grid04>
-            <h3>Sobre</h3>
+            <ul>
+              {links.map((link) => {
+                return (
+                  <Link href={link.rota} key={link.text} legacyBehavior>
+                    <li>
+                      <a>{link.text}</a>
+                    </li>
+                  </Link>
+                )
+              })}
+            </ul>
           </Grid04>
         </Container>
         <div className={styles.containerIcons}>

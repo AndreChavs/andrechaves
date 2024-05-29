@@ -32,7 +32,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: 'Yeda Gamboa',
-      company: 'XYZ Corporation',
+      company: 'Gamboa Ltda',
       text: 'Estou muito satisfeita com o trabalho excepcional do André Chaves na criação do nosso novo site para a ABC Empreendimentos. Ele captou perfeitamente a essência da nossa marca e traduziu isso em um site moderno, intuitivo e altamente funcional. Desde o início, sua comunicação foi clara e profissional, e ele superou todas as nossas expectativas. Recomendo sem hesitação!',
       image: '/testimonials/girl.jpeg'
     }

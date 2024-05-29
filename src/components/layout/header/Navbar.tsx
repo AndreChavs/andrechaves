@@ -17,7 +17,7 @@ const Navbar = () => {
       <Logo />
       <MobileMenu mobile={mobile} setMobile={setMobile}/>
       <NavList mobile={mobile} setMobile={setMobile}/>
-      <Button label="Contato" icon="pi pi-user" className={styles.btn}/>
+      <Button label="Entrar" icon="pi pi-user" className={styles.btn}/>
     </nav>
   )
 }

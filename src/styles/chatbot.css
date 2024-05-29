@@ -1,0 +1,42 @@
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option-button {
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background-color: #25d366;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.option-button:hover {
+  background-color: #128c7e;
+}
+
+.react-chatbot-kit-chat-message-container{
+  padding: 0 17.5px 10px 17.5px;  
+  height: 424px;
+  overflow-y: scroll;  
+  border: 1px solid #d8d8d8 !important;
+
+}
+
+.react-chatbot-kit-chat-input{
+  border: 1px solid #d8d8d8 !important;
+}
+
+.react-chatbot{
+  position: fixed !important;
+  background: transparent;
+  top: 80px;
+  right: 1rem;
+  z-index: 999;
+}
+

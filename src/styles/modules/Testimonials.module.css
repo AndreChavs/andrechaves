@@ -19,8 +19,8 @@ background: linear-gradient(180deg, rgba(3,74,166,1) 0%, rgba(0,239,254,1) 50%, 
 }
 
 .swiper {
-  width: 380px;
-  height: 520px;
+  width: 340px;
+  height: 460px;
  
 }
 
@@ -30,7 +30,7 @@ background: linear-gradient(180deg, rgba(3,74,166,1) 0%, rgba(0,239,254,1) 50%, 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 520px;
+  height: 460px;
 }
 
 .avatar img{
@@ -51,4 +51,10 @@ background: linear-gradient(180deg, rgba(3,74,166,1) 0%, rgba(0,239,254,1) 50%, 
 .author{
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .section{    
+    height: 100%;    
+  }
 }

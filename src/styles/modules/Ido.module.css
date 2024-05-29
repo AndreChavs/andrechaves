@@ -3,7 +3,6 @@
   padding: 40px 0 0 0;
   height: auto;
   position: relative;
-  
 }
 .title{
   text-align: center;
@@ -30,7 +29,7 @@
 }
 
 .ballon{
-  width: 420px; 
+  width: 450px; 
   padding: .5rem;
   background-color: #ffffff8d;
   color: var(--second);
@@ -195,11 +194,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .section{    
-    height: 100%;    
-  }
-}
+
 
 @media screen and (max-width: 767px) {
   .section{    

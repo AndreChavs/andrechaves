@@ -5,7 +5,7 @@ import img1 from '../../../public/service0.png'
 import img2 from '../../../public/service1.png'
 import img3 from '../../../public/service2.png'
 import img4 from '../../../public/service3.png'
-import { Grid03, Grid06 } from '../layout/Grids';
+import { Grid03 } from '../layout/Grids';
 import CardEffect from '../Cards/CardEffect';
 
 const Servicos = () => {
@@ -25,7 +25,7 @@ const Servicos = () => {
     },
     {
       img:img3,
-      titulo:"Desenvolvimento de Sistemas Web e Mobile Apps",
+      titulo:"Sistemas Web e Mobile Apps",
       subTitulo:"Soluções Personalizadas para Suas Necessidades",
       descricao:"Criação de sistemas web e aplicativos móveis sob medida para melhorar a eficiência e a produtividade do seu negócio. Integrações perfeitas, funcionalidades robustas e experiências de usuário excepcionais."
     },
@@ -54,8 +54,6 @@ const Servicos = () => {
             </Grid03>
           )
         })}
-               
-        
       </Container>
     </section>
   )

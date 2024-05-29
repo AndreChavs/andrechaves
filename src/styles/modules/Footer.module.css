@@ -1,7 +1,7 @@
 .footer{
   background: rgb(242,242,242);
 background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(3,74,166,1) 80%);
-  padding: 40px 0;
+  padding: 60px 0 40px 0;
   text-align: center;
   height: 100%;
 }
@@ -18,20 +18,38 @@ background: linear-gradient(180deg, rgba(242,242,242,1) 10%, rgba(3,74,166,1) 80
   max-width: 720px;
   margin: .5rem auto;
 }
+.footer ul{
+  list-style: none; 
+}
+.footer ul li{  
+  margin: .3rem 0 0 auto;
+  text-align: right;
+  cursor: pointer;
+  color: #f2f2f2;  
+  padding: .3rem 1rem;
+  width: 120px;
+
+  
+}
+.footer ul li:hover{
+  color: var(--second);
+}
 .fContainer{
-  margin: 5rem auto;
+  margin: 2rem auto;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 .btn{
-  padding: .8rem 2.5rem;
-  background-color:var(--matrixBg);
-  color: var(--second);
+  margin: .8rem 0;
+  padding: .8rem 2rem;
+  background-color:var(--primary);
+  color: #f2f2f2;
 }
 .btn span::before{
   margin-right: .5rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  color: var(--matrixBg);
 }
 
 .containerIcons{

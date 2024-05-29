@@ -1,4 +1,4 @@
-import Contato from '@/components/sections/Contato'
+import React from 'react'
 import Principal from '@/components/sections/Principal'
 import Skills from '@/components/sections/Skills'
 import Servicos from '@/components/sections/Servicos'
@@ -7,7 +7,10 @@ import Me from '@/components/sections/Me'
 import Footer from '@/components/layout/footer/Footer'
 import Testimonials from '@/components/sections/Testimonials'
 
+
 export default function Home() {
+  
+  
   return (
     <>
       <Head>
@@ -23,6 +26,7 @@ export default function Home() {
       <Testimonials />      
       {/* <Contato /> */}
       <Footer />
+      
     </>
   )
 }

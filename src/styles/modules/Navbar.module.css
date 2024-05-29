@@ -76,7 +76,7 @@
 
 
 .btn{
-  padding: .8rem 2.5rem;
+  padding: .7rem 1.8rem;
   background-color:var(--primary);
 }
 .btn span::before{
