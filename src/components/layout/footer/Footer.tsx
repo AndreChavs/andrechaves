@@ -1,10 +1,8 @@
 import React from 'react'
 import Container from '../Container'
 import styles from '@/styles/modules/Footer.module.css'
-import { Logo } from '../header/Navbar'
-import { Grid03, Grid04 } from '../Grids'
+import { Grid04 } from '../Grids'
 import { Button } from 'primereact/button'
-import Image from 'next/image'
 import { LogoSvg } from '../../Logo'
 import Link from 'next/link'
 
@@ -12,10 +10,16 @@ const Footer = () => {
 
   const links: {text: string, rota: string}[] = [
     {text: 'Home', rota: '/'},
-    {text: 'Serviços', rota: '/#servicos'},
-    {text: 'Cursos', rota: '/cursos'},
-    // {text: 'Projects', rota: '#projects'},
+    {text: 'Serviços', rota: '/servicos'},
+    {text: 'Cursos', rota: '/cursos'},    
+    {text: 'Suporte', rota: '/suporte'},    
     {text: 'Blog', rota: '/posts'},
+  ]
+  const services = [
+    {text: 'Criação de sites', rota: '/servicos/sites'},
+    {text: 'Landing Pages', rota: '/servicos/sites'},
+    {text: 'Desenvolvimento web/mobile', rota: '/servicos/apps'},
+    {text: 'Automação de Marketing digital', rota: '/servicos/automacao-mkt'},
   ]
 
   const icons = [
@@ -51,8 +55,19 @@ const Footer = () => {
             <h3>ACTECH</h3>
             <address>Endereço: Rua wilson dias da fonseca, 561 - centro <br /> <strong>Santarém - PA</strong></address>
           </Grid04>
-          <Grid04>
-            <ul>
+          <Grid04 style={{display:"flex", justifyContent:"space-between"}}>
+            <ul style={{textAlign:"left"}}>
+              <h4>Serviços</h4>
+              {services.map((item) => {
+                return (
+                  <Link href={item.rota} key={item.text} legacyBehavior>
+                    <li><a style={{fontSize:"12px"}}>{item.text}</a></li>
+                  </Link>
+                )
+              })}
+            </ul>
+            <ul style={{textAlign:"right"}}>
+              <h4>Menu</h4>
               {links.map((link) => {
                 return (
                   <Link href={link.rota} key={link.text} legacyBehavior>
@@ -66,17 +81,21 @@ const Footer = () => {
           </Grid04>
         </Container>
         <div className={styles.containerIcons}>
-          {icons.map((icon) => {
-            return (
-              <div className={styles.icon} key={icon.icon}>
-                <Link href={icon.href} legacyBehavior>
-                  <a target={"_blank"}>
-                    <i className={icon.icon}></i>
-                  </a>
-                </Link>
-              </div>
-            )
-          })}
+          <h3>Siga-me nas Redes Sociais</h3>
+          <p>Fique por dentro das nossas últimas novidades e dicas seguindo-me nas redes sociais.</p>
+          <div className={styles.icons}>
+            {icons.map((icon) => {
+              return (
+                <div className={styles.icon} key={icon.icon}>
+                  <Link href={icon.href} legacyBehavior>
+                    <a target={"_blank"}>
+                      <i className={icon.icon}></i>
+                    </a>
+                  </Link>
+                </div>
+              )
+            })}
+          </div>
         </div>
       </footer>
       <div className={styles.copy}>© Copyright ACTECH - Todos os direitos reservados - 2024</div>

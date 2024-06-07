@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react'
 import Container from '../Container'
 import Navbar from './Navbar'
 
-const Header = ({className}: {className: string}) => {
+const Header = ({className}: {className?: string}) => {
   const styles: CSSProperties = {
     width: '100%',
     position: 'fixed',

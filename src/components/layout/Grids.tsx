@@ -5,6 +5,7 @@ interface GridProps{
   children?: ReactNode;
   style?: CSSProperties;
   className?: [key: string] | string;
+  id?:string;
 }
 
 export const Grid01 = ({children, className, style}:GridProps) => {
@@ -52,10 +53,10 @@ export const Grid05 = ({children, className, style}:GridProps) => {
   )
 }
 
-export const Grid06 = ({children, className, style}:GridProps) => {
+export const Grid06 = ({children, className, style, id}:GridProps) => {
   const componentStyles = [styles.grid06, className]
   return (
-    <div className={componentStyles.join(' ')} style={style}>
+    <div className={componentStyles.join(' ')} style={style} id={id}>
       {children}
     </div>
   )

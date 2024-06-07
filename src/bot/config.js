@@ -32,7 +32,7 @@ const config = {
     {
       widgetName: "serviceOptions",
       widgetFunc: (props) => <ServiceOptions {...props} />,
-    },
+    }    
   ],
   customStyles: {
     botMessageBox: {

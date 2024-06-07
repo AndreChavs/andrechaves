@@ -16,6 +16,12 @@ const MessageParser = ({ children, actions }) => {
     else if (lowerCaseMessage.includes("cursos") || message.includes("4")) {
       actions.handleCursos();
     }
+    else if (lowerCaseMessage.includes("suporte") || message.includes("5")) {
+      actions.handleSuporte();
+    }
+    else if (lowerCaseMessage.includes("especialista") || message.includes("6")) {
+      actions.handleEspecialista();
+    }
     
   };
 

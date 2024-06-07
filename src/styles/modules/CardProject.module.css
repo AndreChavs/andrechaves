@@ -1,31 +1,48 @@
 .card{  
-  height: 320px;
+  height: auto;  
   border-radius: 10px;
-  background: rgb(11,12,15);
+  background: #0b0c0f;
   background: linear-gradient(321deg, rgba(11,12,15,1) 0%, rgba(50,56,70,1) 100%);
-  box-shadow: inset 5px 5px 10px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 4px 4px 12px #000;  
+  transition: .3s ease-in;  
+}
+.card2{
+  background: rgb(3,74,166);
+  background: linear-gradient(45deg, rgba(3,74,166,1) 50%, rgba(0,111,255,1) 100%);
+  height: auto;  
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px #000;  
+  transition: .3s ease-in;
 }
 
-.card:hover{
-  box-shadow: -5px -5px 10px #000;
+.card:hover, .card2:hover{
+  box-shadow: 2px 2px 5px #000;
+  transition: .3s ease-in;  
 }
+
 
 
 .projeto{
+  padding: 1rem .8rem;
+}
+.projeto h3{
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+
+/* .projeto{
   width: 100%;  
   height:100%;
   position: relative;
   color: transparent;
-}
-.projeto:hover{
+} */
+/* .projeto:hover{
   transition: .3s ease-in;
   color: #fff;
-}
+} */
 
-.projeto h1{
+/* .projeto h1{
   text-align: center;
   width: 100%;    
   font-weight: 300;   
@@ -34,7 +51,7 @@
   left: 50%;
   transform: translate(-50%, -50%);    
   pointer-events: none;           
-}
+} */
 
 
 

@@ -2,7 +2,7 @@
 
 :root {
   --primary: #034aa6;
-  --second:rgb(13, 13, 13);
+  --second:#0d0d0d;
   --ternary:#00EFFE;
   --matrixBg:#0F0;
   --clr-neutral-900: hsl(207, 19%, 9%);
@@ -37,7 +37,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .button {

@@ -1,0 +1,358 @@
+#mainCoantiner{
+  background: rgb(13,13,13);
+background: linear-gradient(180deg, rgba(13,13,13,1) 85%, rgba(242,242,242,1) 100%);
+  height:100%;
+  width:100%;
+  padding-bottom: 50px;
+  position: relative;
+  padding: 2rem 0;
+}
+
+
+
+/***********pricing table**********/
+.title-h1 {
+  padding:1rem 0;  
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: inherit;  
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;  
+  font-family: "Montserrat", sans-serif;
+  color: #f2f2f2;
+  max-width: 767px;
+  margin: 0 auto 0px auto;
+}
+
+.subtitle{
+  text-align: center;
+  padding:1rem 0 2rem 0;
+
+}
+
+
+
+.pricing-price-wrapper
+{
+      background-color: rgba(71, 71, 72, 0.2);
+  border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    padding-top: 45px;
+  padding-bottom: 34px;
+      text-align: center;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.13), -20px -20px 60px rgba(29, 29, 29, 0.08);
+}
+.pricing-price
+{
+  background-color: #393b4a;
+  background-color: #00bcd4;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(0, 188, 212, 0.31);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(0, 188, 212, 0.31);
+    box-shadow: 0px 0px 0px 10px rgba(0, 188, 212, 0.31);
+  color: #fff;
+  border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    padding-top: 46px;
+}
+
+.pricing-cost {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.pricing-table-style-4 .time {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.pricing-row-title
+{
+  background-color: #303241;
+  padding: 10px;
+  text-align: center;
+}
+
+.pricing_row_title {
+    color: #00bcd4;
+  line-height: 38px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pricing-table.pricing-table-style-4 .pricing-row
+{
+  background-color: #393b4a;
+}
+.pricing-table-style-4 figure.pricing-row:first-of-type {
+    padding-top: 15px;
+}
+.pricing-table-style-4 .pricing-row {
+    padding: 5px 10px;
+}
+figure {
+    margin: 0;
+  display: block;
+}
+
+figure {
+  display: block;
+  padding-block-start: 0em;
+  padding-block-end: 0em;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  background-color: rgba(51, 51, 51, 0.4117647058823529);
+  text-align: left;
+}
+
+.pricing-row:before {
+    vertical-align: middle;
+   content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    color: #00bfa5;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.strike:before
+{
+  content:none;
+}
+.pricing_row_title {
+    color: #00bcd4;
+}
+
+.pricing-column
+{
+  float: none;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 42px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.pricing-column-wrapper {
+  max-width: 271px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.pricing-row-title {
+    background-color: rgba(48, 50, 65, 0.2);
+}
+
+.margin-body
+{
+        position: relative;
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.pricing-row{
+  border-top: 1px solid #7273723b;
+  padding: .5rem 1rem;
+}
+
+
+.pricing-price-wrapper
+{
+  border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    padding-top: 45px;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper .pricing-price {
+    background-color: #a637ec;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
+    box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
+}
+
+.strike
+{
+  text-decoration: line-through;
+    color: #99a9b5;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper .pricing_row_title {
+    color: #a637ec;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing_row_title {
+    color: #ee417c;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing-price {
+    background-color: #ee417c;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(238, 65, 124, 0.31);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(238, 65, 124, 0.31);
+    box-shadow: 0px 0px 0px 10px rgba(238, 65, 124, 0.31);
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing_row_title {
+    color: #ff994e;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing-price {
+    background-color: #ff994e;
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
+    box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper .pricing-row:before{
+    color: #a637ec;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing-row:before
+{
+  color: #ee417c;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing-row:before
+{
+      color: #ff994e;
+}
+
+
+.gem-button
+{
+    cursor: pointer;
+  border-width: 2px;
+    line-height: 36px;
+    border-style: solid;
+    background: transparent;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 17px;
+    font-size: 14px;
+    margin: 25px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+  
+}
+.gem-green
+{
+  border-radius: 0px;
+    border-color: rgb(0, 188, 212);
+    color: rgb(0, 188, 212) !important;
+}
+.gem-green:hover
+{
+     background-color: rgb(0, 188, 212);
+    color: rgb(255, 255, 255) !important;
+}
+
+.gem-purpel
+{
+  border-radius: 0px;
+    border-color: rgb(166, 55, 236);
+    color: rgb(166, 55, 236) !important;
+}
+
+.gem-purpel:hover
+{
+     background-color: #a637ec;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.gem-orange
+{
+  border-radius: 0px;
+    border-color: #ee417c;
+    color: #ee417c !important;
+}
+
+.gem-orange:hover
+{
+     background-color: #ee417c;
+    color: rgb(255, 255, 255) !important;
+}
+
+.gem-yellow
+{
+  border-radius: 0px;
+    border-color: #ff994e;
+    color: #ff994e !important;
+}
+.gem-yellow:hover
+{
+     background-color: #ff994e;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.gem-button-position-center {
+    text-align: center;
+    display: block;
+      background-color: rgba(0, 0, 0, 0.16862745098039217);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.pricing-column:hover .pricing-price-wrapper
+{
+      box-shadow: 0px 35px 80px rgba(4, 255, 236, 0.25), 0px 0px 0px rgba(10, 197, 173, 0.33);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.pricing-column:hover
+{
+  overflow:hidden;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper .pricing-column:hover .pricing-price-wrapper
+{
+      box-shadow: 0px 35px 80px rgba(230, 2, 241, 0.34), 0px 0px 0px rgba(21, 21, 20, 0.79);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing-column:hover .pricing-price-wrapper
+{
+       box-shadow: 0px 35px 80px rgba(255, 4, 166, 0.25), 0px 0px 0px rgba(222, 6, 84, 0.33);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper + .pricing-column-wrapper .pricing-column:hover .pricing-price-wrapper
+{
+      box-shadow: 0px 35px 80px rgba(241, 139, 2, 0.34), 0px 0px 0px rgba(21, 21, 20, 0.79);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+.title{
+  text-align: center;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}

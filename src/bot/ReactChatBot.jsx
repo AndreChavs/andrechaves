@@ -11,7 +11,7 @@ const ReactChatBot = () => {
   const [showBot, toggleBot] = React.useState(false);
   const router = useRouter()  
 
-  const saveMessages = (messages, HTMLString) => {
+  const saveMessages = (messages) => {
     localStorage.setItem('chat_messages', JSON.stringify(messages));
   };
 
@@ -24,19 +24,17 @@ const ReactChatBot = () => {
     toggleBot((prev) => !prev)
   }
 
+  const handleScroll = () => {     
+    if ((window.innerHeight + window.scrollY + 1) >= document.body.scrollHeight) { 
+      console.log("Você chegou ao final da página!");
+       if(router.route === "/"){
+         toggleBot(true)
+       }    
+    }
+  };
   React.useEffect(() => {
-    const handleScroll = () => {     
-      if ((window.innerHeight + window.scrollY + 1) >= document.body.scrollHeight) { 
-        console.log("Você chegou ao final da página!");
-         if(router.route === "/"){
-           toggleBot(true)
-         }    
-      }
-    };
     window.addEventListener('scroll', handleScroll);  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (

@@ -27,7 +27,11 @@
   transition: 2.3s ease-in;
 }
 
-.gridText{  
+.gridText{
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 2.3s ease-in;  
   left: -30%;
   opacity: 0;    
 }

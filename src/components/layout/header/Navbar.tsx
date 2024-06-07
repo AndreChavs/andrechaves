@@ -58,9 +58,9 @@ export const NavList = ({mobile, setMobile}: MobileMenuProps) => {
   }, [mobile])
   const links: {text: string, rota: string}[] = [
     {text: 'Home', rota: '/'},
-    {text: 'Serviços', rota: '/#servicos'},
-    {text: 'Cursos', rota: '/cursos'},
-    // {text: 'Projects', rota: '#projects'},
+    {text: 'Serviços', rota: '/servicos'},
+    {text: 'Cursos', rota: '/cursos'},    
+    {text: 'Suporte', rota: '/suporte'},
     {text: 'Blog', rota: '/posts'},
   ]
   return (

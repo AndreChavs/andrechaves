@@ -27,6 +27,16 @@ const ServiceOptions = ({ actions }:ServiceOptsProps) => {
       handler: actions.handleCursos,
       id: 4,
     },
+    {
+      text: "5 - Suporte",
+      handler: actions.handleSuporte,
+      id: 5,
+    },
+    {
+      text: "6 - Fale com o Especialista",
+      handler: actions.handleEspecialista,
+      id: 6,
+    },
   ];
 
   const buttonsMarkup = options.map((option) => (
