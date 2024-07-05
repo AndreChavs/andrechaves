@@ -7,9 +7,9 @@ interface CanvaMatrixProps{
 }
 
 
-const CanvaMatrix = ({className}:CanvaMatrixProps) => {
+const CanvaMatrix = () => {
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
-  const componentStyles = [className]
+  // const componentStyles = [className]
   
   const drawEffectMatrix = React.useCallback(() => {
     if(canvasRef.current){
@@ -46,7 +46,12 @@ const CanvaMatrix = ({className}:CanvaMatrixProps) => {
     };
   },[])
   
-  return <canvas ref={canvasRef} className={componentStyles.join('')}></canvas>
+  return <canvas ref={canvasRef}  style={{
+    display: "block",
+    position: "absolute",
+    backgroundColor: "var(--second)",
+    zIndex: "0",
+  }}></canvas>
 }
 
 export default CanvaMatrix

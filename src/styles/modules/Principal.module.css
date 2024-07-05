@@ -101,12 +101,12 @@
   transform: scale(1.2);  
 }
 
-.canvas{
+/* .canvas{
   display: block;
   position: absolute;
   background-color: var(--second);
   z-index: 0;  
-}
+} */
 
 .iframe{
   pointer-events: none;  
