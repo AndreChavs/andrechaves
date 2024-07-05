@@ -1,5 +1,7 @@
 
-const matrixEffect = (canvas: HTMLCanvasElement) => {
+const matrixEffect = (canvas: HTMLCanvasElement | null) => {
+  
+  if(canvas){
     const ctx = canvas?.getContext('2d') as CanvasRenderingContext2D;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -14,14 +16,14 @@ const matrixEffect = (canvas: HTMLCanvasElement) => {
     const draw = () => {
       ctx.fillStyle = 'rgba(13, 13, 13, 0.2)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-
+  
       ctx.fillStyle = '#034aa6';
       ctx.font = `${fontSize}px monospace`;
-
+  
       rainDrops.forEach((y, i) => {
         const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
         ctx.fillText(text, i * fontSize, y * fontSize);
-
+  
         if (y * fontSize > canvas.height && Math.random() > 0.975) {
           rainDrops[i] = 0;
         }
@@ -29,6 +31,8 @@ const matrixEffect = (canvas: HTMLCanvasElement) => {
       });
     };
    return draw     
+  }
+ 
 }
 
 export default matrixEffect
