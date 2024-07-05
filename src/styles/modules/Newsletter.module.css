@@ -1,5 +1,4 @@
-.newsletter{
-  /* margin: 5rem auto 1rem auto; */
+.newsletter{  
   padding: 5rem 0;
   text-align: center;
   background: #f2f2f2;
@@ -37,13 +36,14 @@
   margin: 1rem auto;
 }
 .newforms input{
+  display: block;
   padding: .5rem .8rem;
-  border-radius: 8px 0px 0px 8px;
-  /* width: 320px;   */
+  margin: 1rem auto;
+  /* border-radius: 8px 0px 0px 8px;   */
 }
 .newforms button{
-  padding: .5rem .8rem;
-  border-radius: 0px 8px 8px 0px ;
+  padding: .5rem .8rem;  
+  /* border-radius: 0px 8px 8px 0px ; */
 }
 .newforms button span::before{
   padding: .5rem;

@@ -8,13 +8,13 @@
 }
 .input{
   width: 100%;
-  border: 1px solid #707070;
-  background: #323846;
+  border: 1px solid var(--primary);
+  background: #f2f2f2;
   padding: 10px 8px;
-  color: #fff;
+  color: var(--primary);
   font-weight: bold;
   border-radius: 5px;
-  box-shadow: inset 3px 3px 6px #000;
+  /* box-shadow: inset 3px 3px 6px var(--second); */
 }
 .input::placeholder{
   opacity: .50;
@@ -23,13 +23,13 @@
 .textAreaInput{
   width: 100%;
   height: 115px;
-  border: 1px solid #707070;
-  background: #323846;
+  border: 1px solid var(--primary);
+  background: #f2f2f2;
   padding: 10px 8px;
-  color: #fff;
+  color: var(--primary);
   font-weight: bold;
   border-radius: 5px;
-  box-shadow: inset 3px 3px 6px #000;
+  /* box-shadow: inset 3px 3px 6px #000; */
 }
 
 .btn{

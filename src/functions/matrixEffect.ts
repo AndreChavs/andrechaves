@@ -1,5 +1,5 @@
-export const matrixEffect = () => {
-  const canvas = document.getElementById('canvas') as HTMLCanvasElement;
+
+const matrixEffect = (canvas: HTMLCanvasElement) => {
     const ctx = canvas?.getContext('2d') as CanvasRenderingContext2D;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -28,5 +28,10 @@ export const matrixEffect = () => {
         rainDrops[i]++;
       });
     };
-   return draw
+   return draw     
 }
+
+export default matrixEffect
+
+
+

@@ -18,6 +18,6 @@
       "@/*": ["./src/*"],         
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/bot/ReactChatBot.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/bot/ReactChatBot.jsx", "src/bot/config.js"],
   "exclude": ["node_modules"]
 }

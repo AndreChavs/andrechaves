@@ -1,0 +1,51 @@
+import React from "react";
+import matrixEffect from '@/functions/matrixEffect'
+// import data from '../functions/asyncWorker.ts'
+
+
+interface CanvaMatrixProps{
+  className:[key: string] | string; 
+}
+
+
+const CanvaMatrix = ({className}:CanvaMatrixProps) => {
+  const canvasRef = React.useRef<HTMLCanvasElement>(null);
+  const componentStyles = [className]
+  
+  const drawEffectMatrix = React.useCallback(() => {
+    if(canvasRef.current){
+      const effectDraw = matrixEffect(canvasRef.current)
+      return effectDraw
+    }
+    return () => {};
+  }, [])
+  
+  
+  React.useEffect(() => {
+    
+    async function timeMatrix() {
+      const draw = drawEffectMatrix();      
+      const timePromise:Promise<{intervalId:NodeJS.Timer, timeOut:NodeJS.Timer}> = new Promise((resolve) => {
+        const timeOut = setTimeout(() => {
+          const intervalId = setInterval(draw, 50)
+          resolve({intervalId, timeOut})
+        },200)
+      })
+      return timePromise         
+    }
+
+
+    return () => {
+      timeMatrix().then(({intervalId, timeOut}) => {
+        return () => {
+          clearTimeout(timeOut);
+          clearInterval(intervalId);
+        }
+      })
+    };
+  },[])
+  
+  return <canvas ref={canvasRef} className={componentStyles.join('')}></canvas>
+}
+
+export default CanvaMatrix

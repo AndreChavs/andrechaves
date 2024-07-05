@@ -27,24 +27,24 @@ const Servicos = () => {
     },
     {
       img:img3,
-      titulo:"Sistemas Web e Mobile Apps",
+      titulo:"Sistemas Web e Web Apps",
       subTitulo:"Soluções Personalizadas para Suas Necessidades",
       descricao:"Criação de sistemas web e aplicativos móveis sob medida para melhorar a eficiência e a produtividade do seu negócio. Integrações perfeitas, funcionalidades robustas e experiências de usuário excepcionais.",
-      link:"/servicos/sites"
+      link:"/servicos/aplicacoes"
     },
     {
       img:img4,
       titulo:"Automação de Marketing Digital",
       subTitulo:"Automatize e Escale Seu Marketing",
       descricao:"Implementação de estratégias de automação para otimizar suas campanhas de marketing digital. Economize tempo, aumente o engajamento e converta mais leads com fluxos de trabalho automatizados e personalizados.",
-      link:"/servicos/sites"
+      link:"/servicos/automacoes"
     },
   ]
 
  
   return (
     <section className={styles.section}>
-      <h1 className={styles.title}>Serviços</h1>
+      <h1 className={styles.title}>Meus Serviços</h1>
       <Container className={styles.containerSobre}>
         {dataService.map((item) => {
           return (

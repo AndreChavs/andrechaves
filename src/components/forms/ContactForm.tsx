@@ -50,17 +50,17 @@ const ContactForm = () => {
             name="nome" 
             placeholder='Nome'
             />
-            <ErrorMessage name="nome" component="div" />
+            <ErrorMessage name="nome" component="div" style={{color:"#000"}}/>
           </Grid06>          
 
           <Grid06 className={styles.box}>          
             <Field className={styles.input} type="email" id="email" name="email" placeholder='Email'/>
-            <ErrorMessage name="email" component="div" />
+            <ErrorMessage name="email" component="div" style={{color:"#000"}}/>
           </Grid06>
 
           <Grid06 className={styles.box}>          
             <Field className={styles.textAreaInput} as="textarea" id="mensagem" name="mensagem" placeholder='Mensagem:'/>
-            <ErrorMessage name="mensagem" component="div" />
+            <ErrorMessage name="mensagem" component="div" style={{color:"#000"}}/>
           </Grid06>
           {(enviado)? <button className={styles.btn} type="submit" disabled>Obrigado !</button> : <button className={styles.btn} type="submit">Enviar</button>}
           

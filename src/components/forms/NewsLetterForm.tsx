@@ -39,6 +39,7 @@ const NewsLetterForm = () => {
           <p>Transforme Seu Negócio com Nossas Soluções Digitais Inovadoras e descubra as últimas tendências em desenvolvimento web, automação de marketing digital e muito mais!</p>
           <form>
             <div className={styles.newforms}>
+              <InputText placeholder="Nome" />
               <InputText placeholder="Email" />
               <SpinnerButton />
             </div>

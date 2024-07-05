@@ -11,7 +11,7 @@ const ReactChatBot = () => {
   const [showBot, toggleBot] = React.useState(false);
   const router = useRouter()  
 
-  const saveMessages = (messages) => {
+  const saveMessages = (messages) => {      
     localStorage.setItem('chat_messages', JSON.stringify(messages));
   };
 
@@ -25,8 +25,7 @@ const ReactChatBot = () => {
   }
 
   const handleScroll = () => {     
-    if ((window.innerHeight + window.scrollY + 1) >= document.body.scrollHeight) { 
-      console.log("Você chegou ao final da página!");
+    if ((window.innerHeight + window.scrollY + 1) >= document.body.scrollHeight) {
        if(router.route === "/"){
          toggleBot(true)
        }    
@@ -41,7 +40,7 @@ const ReactChatBot = () => {
     <div className='react-chatbot'>
       {
         showBot && <Chatbot
-          config={config}
+          config={config(toggleBot)}
           messageParser={MessageParser}
           actionProvider={ActionProvider}
           messageHistory={loadMessages()}

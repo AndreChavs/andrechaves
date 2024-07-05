@@ -6,6 +6,7 @@ interface ServiceOptsProps{
 }
 
 const ServiceOptions = ({ actions }:ServiceOptsProps) => {
+ 
   const options = [
     {
       text: "1 - Criação de Sites",
@@ -23,19 +24,9 @@ const ServiceOptions = ({ actions }:ServiceOptsProps) => {
       id: 3,
     },
     {
-      text: "4 - Cursos",
-      handler: actions.handleCursos,
-      id: 4,
-    },
-    {
-      text: "5 - Suporte",
-      handler: actions.handleSuporte,
-      id: 5,
-    },
-    {
-      text: "6 - Fale com o Especialista",
+      text: "5 - Fale com o Especialista",
       handler: actions.handleEspecialista,
-      id: 6,
+      id: 4,
     },
   ];
 

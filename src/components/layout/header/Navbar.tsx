@@ -8,22 +8,30 @@ import { Button } from 'primereact/button';
 interface MobileMenuProps {
   mobile: boolean;
   setMobile: React.Dispatch<React.SetStateAction<boolean>>;
+  setClassModule: React.Dispatch<React.SetStateAction<string>>;
+  
+}
+
+interface NaviListProps{
+  classModule:string;
+  setMobile: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Navbar = () => {
   const [mobile, setMobile] = React.useState(false)
+  const [classModule, setClassModule] = React.useState(styles.navlist);
+
   return (
     <nav className={styles.navbar}>
       <Logo />
-      <MobileMenu mobile={mobile} setMobile={setMobile}/>
-      <NavList mobile={mobile} setMobile={setMobile}/>
-      <Button label="Entrar" icon="pi pi-user" className={styles.btn}/>
+      <MobileMenu mobile={mobile} setMobile={setMobile} setClassModule={setClassModule} />
+      <NavList setMobile={setMobile} classModule={classModule}/>      
     </nav>
   )
 }
 
 
-export const Logo = () => {
+const Logo = () => {
   return (
     <div className={styles.logo}>
       <Image src={"/logo.png"} width={292} height={160} alt='logo actech'/>
@@ -31,54 +39,59 @@ export const Logo = () => {
   )
 }
 
-export const MobileMenu = ({mobile, setMobile}: MobileMenuProps) => {
-  function handleClick() {
-    setMobile(!mobile)
-  }
-  return (
-    <div onClick={handleClick} className={styles.mobileMenu}>
-      {mobile ? (
-        <i className="fas fa-times close"></i>
-      ) : (
-        <i className="fas fa-bars open"></i>
-      )}
-    </div>
-  )
-}
-
-export const NavList = ({mobile, setMobile}: MobileMenuProps) => {
-  const [classModule, setClassModule] = React.useState(styles.navlist);
-  const router = useRouter()
-  React.useEffect(() => {
-    if(mobile){
-      setClassModule(styles.navlistActive)
-    } else {
-      setClassModule(styles.navlist)
+const MobileMenu = React.memo(
+  ({mobile, setMobile, setClassModule}: MobileMenuProps) => {
+    async function handleClick() {    
+      setMobile(!mobile)
+      if(mobile){
+        setClassModule(styles.navlist)
+      }else{      
+        setClassModule(styles.navlistActive)
+      }
     }
-  }, [mobile])
-  const links: {text: string, rota: string}[] = [
-    {text: 'Home', rota: '/'},
-    {text: 'Serviços', rota: '/servicos'},
-    {text: 'Cursos', rota: '/cursos'},    
-    {text: 'Suporte', rota: '/suporte'},
-    {text: 'Blog', rota: '/posts'},
-  ]
-  return (
-    <ul className={classModule}>
-      {links.map( (link, index) => {
-        return (
-          <Link href={link.rota} key={index} legacyBehavior>
-            <li className={(router.asPath !== link.rota)?
-               styles.itemlist : styles.itemlistActive}
-              onClick={() => setMobile(false)}
-            >
-              <a>{link.text}</a>
-            </li>
-          </Link>
-        )
-      })}
-    </ul>
-  )
-}
+    return (
+      <div onClick={handleClick} className={styles.mobileMenu}>
+        {mobile ? (
+          <i className="fas fa-times close"></i>
+        ) : (
+          <i className="fas fa-bars open"></i>
+        )}
+      </div>
+    )
+  }
+)
+
+const NavList = React.memo(
+  ({setMobile, classModule}: NaviListProps) => { 
+    const router = useRouter()
+  
+    const links: {text: string, rota: string}[] = [
+      {text: 'Início', rota: '/'},    
+      {text: 'Contato', rota: '/contato'},    
+      {text: 'Blog', rota: '/posts'},
+    ]
+    
+    return (
+      <>
+      {classModule && 
+        <ul className={classModule}>
+          {links.map( (link, index) => {
+            return (
+              <Link href={link.rota} key={index} legacyBehavior>
+                <li className={(router.asPath !== link.rota)?
+                  styles.itemlist : styles.itemlistActive}
+                  onClick={() => setMobile(false)}
+                >
+                  <a>{link.text}</a>
+                </li>
+              </Link>
+            )
+          })}
+        </ul>
+      }
+      </>
+    )
+  }
+)
 
 export default Navbar

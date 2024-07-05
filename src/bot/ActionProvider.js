@@ -1,53 +1,22 @@
-import Link from 'next/link';
 import React from 'react';
-
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   
   const handleSiteCreation = () => {
-    const botMessage = createChatBotMessage('Se você deseja saber mais sobre nossos serviços de criação de sites e landingPages clique no link abaixo:');
-
-    const link = createChatBotMessage(<Link href='/servicos/sites' style={{wordBreak:"break-all"}}>{`${window.location.origin}/servicos/sites`}</Link>)
-
-    
-
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage, link],
-    }));
+    window.open(`https://api.whatsapp.com/send?phone=${'5593984394640'}&text=${encodeURIComponent('criação de páginas')}`, '_blank');    
   };
 
+
   const handleChatBotAutomation = () => {
-    const botMessage = createChatBotMessage('Você selecionou Automação com ChatBot.');
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
+    window.open(`https://api.whatsapp.com/send?phone=${'5593984394640'}&text=${encodeURIComponent('Automação com chatbot')}`, '_blank'); 
   };
 
   const handleAppDevelopment = () => {
-    const botMessage = createChatBotMessage('Você selecionou Desenvolvimento de Aplicações.');
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
+    window.open(`https://api.whatsapp.com/send?phone=${'5593984394640'}&text=${encodeURIComponent('Desenvolvimento de Aplicações')}`, '_blank'); 
   };
 
-  const handleCursos = () => {
-    const botMessage = createChatBotMessage('Você selecionou cursos.');
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  };
+ 
 
-  const handleSuporte = () => {
-    const botMessage = createChatBotMessage('Você selecionou suporte.');
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
-  }
 
   const handleEspecialista = () => {
     const botMessage = createChatBotMessage('Você selecionou Especialista.');
@@ -67,9 +36,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             handleSiteCreation,
             handleChatBotAutomation,
             handleAppDevelopment,
-            handleCursos,
-            handleSuporte,
-            handleEspecialista
+            handleEspecialista                      
           },
         });
       })}

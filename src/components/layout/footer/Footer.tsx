@@ -8,19 +8,7 @@ import Link from 'next/link'
 
 const Footer = () => {
 
-  const links: {text: string, rota: string}[] = [
-    {text: 'Home', rota: '/'},
-    {text: 'Serviços', rota: '/servicos'},
-    {text: 'Cursos', rota: '/cursos'},    
-    {text: 'Suporte', rota: '/suporte'},    
-    {text: 'Blog', rota: '/posts'},
-  ]
-  const services = [
-    {text: 'Criação de sites', rota: '/servicos/sites'},
-    {text: 'Landing Pages', rota: '/servicos/sites'},
-    {text: 'Desenvolvimento web/mobile', rota: '/servicos/apps'},
-    {text: 'Automação de Marketing digital', rota: '/servicos/automacao-mkt'},
-  ]
+  
 
   const icons = [
     {
@@ -44,8 +32,8 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <h1>Vamos Impulsionar Seu Negócio!</h1>
-        <p>Entre em contato para descobrir como minhas soluções podem transformar sua presença digital e aumentar seus resultados.</p>
+        <h1>Vamos Digitalizar Seu Negócio!</h1>
+        <p>Entre em contato para descobrir como minhas soluções podem transformar suas ideias em realidade digital com nossos sistemas web personalizados</p>
         <Button label="Fale com o Especialista" icon="pi pi-whatsapp" className={styles.btn}/>
         <Container className={styles.fContainer}>
           <Grid04>
@@ -56,28 +44,8 @@ const Footer = () => {
             <address>Endereço: Rua wilson dias da fonseca, 561 - centro <br /> <strong>Santarém - PA</strong></address>
           </Grid04>
           <Grid04 style={{display:"flex", justifyContent:"space-between"}}>
-            <ul style={{textAlign:"left"}}>
-              <h4>Serviços</h4>
-              {services.map((item) => {
-                return (
-                  <Link href={item.rota} key={item.text} legacyBehavior>
-                    <li><a style={{fontSize:"12px"}}>{item.text}</a></li>
-                  </Link>
-                )
-              })}
-            </ul>
-            <ul style={{textAlign:"right"}}>
-              <h4>Menu</h4>
-              {links.map((link) => {
-                return (
-                  <Link href={link.rota} key={link.text} legacyBehavior>
-                    <li>
-                      <a>{link.text}</a>
-                    </li>
-                  </Link>
-                )
-              })}
-            </ul>
+            <p style={{color:"#f2f2f2" , fontStyle:"italic"}}>Transformando a comunicação empresarial com soluções inteligentes e integradas.</p>
+            
           </Grid04>
         </Container>
         <div className={styles.containerIcons}>

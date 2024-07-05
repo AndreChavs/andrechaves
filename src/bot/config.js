@@ -1,8 +1,12 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import ServiceOptions from './ServiceOptions';
+import LinksOptions from './LinksOptions';
 
 
-const config = {
+  //toggleBot:React.Dispatch<React.SetStateAction<boolean>>;
+
+
+const config = (toggleBot) => ({
   initialMessages: [
     createChatBotMessage(`Olá! Como posso ajudar voçê hoje?`,{
       widget: "serviceOptions",
@@ -32,7 +36,15 @@ const config = {
     {
       widgetName: "serviceOptions",
       widgetFunc: (props) => <ServiceOptions {...props} />,
-    }    
+    },
+    // {
+    //   widgetName:"sitesLink",
+    //   widgetFunc: (props) => <LinksOptions toggleBot={toggleBot} {...props}  />,
+    //   props:{
+    //     href:"/servicos/sites",
+    //     text:"Acesse a nossa página para serviço de sites"
+    //   }              
+    // }    
   ],
   customStyles: {
     botMessageBox: {
@@ -42,8 +54,6 @@ const config = {
       backgroundColor: '#5ccc9d',      
     },    
   },
-
-
-};
+});
 
 export default config;

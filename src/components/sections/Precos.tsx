@@ -13,20 +13,21 @@ const Precos = () => {
                 <div className="pricing-price-row">
                   <div className="pricing-price-wrapper">
                     <div className="pricing-price">
-                      <div className="pricing-cost">$10</div>
-                      <div className="time">Per Month</div>
+                      <div className="pricing-cost">R$119,90</div>
+                      <div className="time">por mês</div>
                     </div>
                   </div>
                 </div>
                 <div className="pricing-row-title">
-                  <div className="pricing_row_title">tiny</div>
+                  <div className="pricing_row_title">Iniciante</div>
                 </div>
-                <figure className="pricing-row">Photo sharing school</figure>
-                <figure className="pricing-row"><span>Drop out ramen hustle</span></figure>
-                <figure className="pricing-row strike">Crush revenue traction</figure>
-                <figure className="pricing-row strike">Crush revenue traction</figure>
-                <figure className="pricing-row strike">User base minimum viable</figure>
-                <figure className="pricing-row strike">Lorem ipsum dolor</figure>
+                <figure className="pricing-row">Domínio, Hospedagem e Email Service personalizado</figure>                
+                <figure className="pricing-row">Suporte técnico via whatsapp</figure>
+                <figure className="pricing-row"><span>Gerenciamento de domínio e hospedagem</span></figure>                
+                <figure className="pricing-row"><span>Análise e Otimização de SEO</span></figure>
+                <figure className="pricing-row"><span>Gestão do GoogleAds</span></figure>
+                <figure className="pricing-row strike"><span>Gestão de automação de e-mail marketing</span></figure>
+                
                 <div className="pricing-footer">
                   <div className="gem-button-container gem-button-position-center">
                     <a className="gem-button gem-green">order now</a>
@@ -41,20 +42,23 @@ const Precos = () => {
                 <div className="pricing-price-row">
                   <div className="pricing-price-wrapper">
                     <div className="pricing-price">
-                      <div className="pricing-cost">$45</div>
-                      <div className="time">Per Month</div>
+                      <div className="pricing-cost">R$549</div>
+                      <div className="time">Por mês</div>
                     </div>
                   </div>
                 </div>
                 <div className="pricing-row-title">
-                  <div className="pricing_row_title">small</div>
+                  <div className="pricing_row_title">Intermediário</div>
                 </div>
-                <figure className="pricing-row">Photo sharing school</figure>
-                <figure className="pricing-row"><span>Drop out ramen hustle</span></figure>
-                <figure className="pricing-row"><span>Crush revenue traction</span></figure>
-                <figure className="pricing-row strike">Crush revenue traction</figure>
-                <figure className="pricing-row strike">User base minimum viable</figure>
-                <figure className="pricing-row strike">Lorem ipsum dolor</figure>
+                <figure className="pricing-row">Domínio, Hospedagem e Email Service personalizado</figure>
+                <figure className="pricing-row">Suporte técnico via whatsapp</figure>
+                <figure className="pricing-row"><span>Gerenciamento de domínio e hospedagem</span></figure>                
+                <figure className="pricing-row"><span>Análise e Otimização de SEO</span></figure>
+                <figure className="pricing-row"><span>Gestão do GoogleAds</span></figure>
+                <figure className="pricing-row"><span>Gestão de automação de e-mail marketing</span></figure>
+                <figure className="pricing-row strike"><span>Gestão de chatbots e fluxos de automação personalizados</span></figure>
+                
+               
                 <div className="pricing-footer">
                   <div className="gem-button-container gem-button-position-center">
                     <a className="gem-button gem-purpel">order now</a>
@@ -68,20 +72,23 @@ const Precos = () => {
                 <div className="pricing-price-row">
                   <div className="pricing-price-wrapper">
                     <div className="pricing-price">
-                      <div className="pricing-cost">$99</div>
+                      <div className="pricing-cost">R$849</div>
                       <div className="time">Per Month</div>
                     </div>
                   </div>
                 </div>
                 <div className="pricing-row-title">
-                  <div className="pricing_row_title">medium</div>
+                  <div className="pricing_row_title">Avançado</div>
                 </div>
-                <figure className="pricing-row">Photo sharing school</figure>
-                <figure className="pricing-row"><span>Drop out ramen hustle</span></figure>
-                <figure className="pricing-row"><span>Crush revenue traction</span></figure>
-                <figure className="pricing-row">Crush revenue traction</figure>
-                <figure className="pricing-row strike">User base minimum viable</figure>
-                <figure className="pricing-row strike">Lorem ipsum dolor</figure>
+                <figure className="pricing-row">Domínio, Hospedagem e Email Service personalizado</figure>
+                <figure className="pricing-row">Suporte técnico via whatsapp</figure>
+                <figure className="pricing-row"><span>Gerenciamento de domínio e hospedagem</span></figure>                
+                <figure className="pricing-row"><span>Análise e Otimização de SEO</span></figure>
+                <figure className="pricing-row"><span>gestão do GoogleAds</span></figure>
+                <figure className="pricing-row"><span>Gestão de automação de e-mail marketing</span></figure>
+                <figure className="pricing-row"><span>Gestão de chatbots e fluxos de automação personalizados</span></figure>
+                <figure className="pricing-row"><span>Gestão de Leads</span></figure>
+                
                 <div className="pricing-footer">
                   <div className="gem-button-container gem-button-position-center">
                     <a className="gem-button gem-orange">order now</a></div>
@@ -94,13 +101,12 @@ const Precos = () => {
                 <div className="pricing-price-row">
                   <div className="pricing-price-wrapper">
                     <div className="pricing-price">
-                      <div className="pricing-cost">$145</div>
-                      <div className="time" style={{display:"inline-block"}}>Per Month</div>
+                      <div className="pricing-cost">Enterprise</div>                      
                     </div>
                   </div>
                 </div>
                 <div className="pricing-row-title">
-                  <div className="pricing_row_title">large</div>
+                  <div className="pricing_row_title">Personalizado</div>
                 </div>
                 <figure className="pricing-row">Photo sharing school</figure>
                 <figure className="pricing-row"><span>Drop out ramen hustle</span></figure>

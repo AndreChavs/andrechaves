@@ -110,8 +110,16 @@
 
 .iframe{
   pointer-events: none;  
-  transform: scale(1.3);
+  transform: scale(1);
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.iframe canvas{
+  aspect-ratio: initial;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px){
@@ -119,6 +127,10 @@
     height: 100%;
   }
   .gridImage img{
+    display: none;
+  }
+
+  .iframe{
     display: none;
   }
 }

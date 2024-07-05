@@ -1,8 +1,10 @@
 .section{
-  height: 100vh;
+  height: auto;
   padding: 40px 0;
-  background: rgb(3,74,166);
-background: linear-gradient(180deg, rgba(3,74,166,1) 0%, rgba(0,239,254,1) 50%, rgba(242,242,242,1) 100%);
+  /* background-color: #f8f8f8; */
+  border-top: 5px solid var(--second);
+  background: rgb(13,13,13);
+background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(242,242,242,1) 100%);
 }
 
 .section h1{

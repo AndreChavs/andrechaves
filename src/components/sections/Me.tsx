@@ -8,23 +8,20 @@ const Me = () => {
   const [isHovered, setIsHovered] = React.useState(false);
   const [isClicked, setIsClicked] = React.useState(false)
 
-  const handleMouseOver = () => {
-    setIsHovered(true);
-  };
+  const handleMouseOver = React.useCallback(() => setIsHovered(true), [])
+  const handleMouseOut = React.useCallback(() => setIsHovered(false), [])
+  const handleClick = React.useCallback(() => setIsClicked(true),[])
 
-  const handleMouseOut = () => {
-    setIsHovered(false);
-  };
 
-  const handleClick = () => {
-    setIsClicked(true)    
-  }
 
   React.useEffect(() => {
     if(isClicked){
-      setTimeout(() => {
+
+      const time = setTimeout(() => {
         setIsClicked(false)
       }, 9000);
+
+      return () => clearTimeout(time)
     }
   },[isClicked])
 
@@ -35,13 +32,13 @@ const Me = () => {
       <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Integrações e Desenvolvimento de Sistemas:</h2> <p>Criação de soluções de software sob medida para atender às necessidades específicas do seu negócio.</p></div>
       <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Criação de Sites e Landing Pages:</h2> <p>Desenvolvo sites personalizados e responsivos, além de landing pages eficazes que capturam leads e aumentam suas taxas de conversão.</p> </div>
       
-      
       <ReactTooltip
         id="my-tooltip-1"
         place="right"
         variant="info"
         content="clique aqui!"
       />
+      
       <div
         data-tooltip-id="my-tooltip-1" 
         className={`${styles.chatbot} ${isHovered ? styles.hovered : ''} ${isClicked ? styles.clicked : ''}`}
