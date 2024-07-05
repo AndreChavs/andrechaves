@@ -1,6 +1,5 @@
 import React from "react";
 import matrixEffect from '@/functions/matrixEffect'
-// import data from '../functions/asyncWorker.ts'
 
 
 interface CanvaMatrixProps{
@@ -22,6 +21,8 @@ const CanvaMatrix = ({className}:CanvaMatrixProps) => {
   
   
   React.useEffect(() => {
+
+    console.log("Matrix Effect")
     
     async function timeMatrix() {
       const draw = drawEffectMatrix();      

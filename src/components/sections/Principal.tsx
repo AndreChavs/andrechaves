@@ -5,7 +5,7 @@ import Container from '../layout/Container'
 import { Grid06 } from '../layout/Grids'
 import Link from 'next/link'
 import Typed from 'typed.js'
-import CanvaMatrix from '../CanvaMatrix';
+// import CanvaMatrix from '../CanvaMatrix';
 import Spline from '@splinetool/react-spline';
 import Loading from '../Loading';
 
@@ -28,7 +28,7 @@ const icons = [
   }
 ]
 
-// const CanvaMatrix = dynamic(() => import('../CanvaMatrix'),{loading:({isLoading}) => <Loading loading={isLoading}/>, ssr:false})
+const CanvaMatrix = dynamic(() => import('../CanvaMatrix'),{loading:({isLoading}) => <Loading loading={isLoading}/>, ssr:false})
 // const Spline = dynamic(() => import('@splinetool/react-spline'), {loading:({isLoading}) => <Loading loading={isLoading}/>, ssr:false})
 
 const Principal = () => { 

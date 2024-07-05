@@ -42,11 +42,7 @@ const Footer = () => {
           <Grid04>
             <h3>ACTECH</h3>
             <address>Endereço: Rua wilson dias da fonseca, 561 - centro <br /> <strong>Santarém - PA</strong></address>
-          </Grid04>
-          <Grid04 style={{display:"flex", justifyContent:"space-between"}}>
-            <p style={{color:"#f2f2f2" , fontStyle:"italic"}}>Transformando a comunicação empresarial com soluções inteligentes e integradas.</p>
-            
-          </Grid04>
+          </Grid04>          
         </Container>
         <div className={styles.containerIcons}>
           <h3>Siga-me nas Redes Sociais</h3>
