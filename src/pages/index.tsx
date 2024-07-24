@@ -70,7 +70,7 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property='og:url' content='https://andrechaves.me/' />
+        <meta property='og:url' content='https://andrechaves.vercel.app/' />
         <meta property='og:type' content='' />
       </Head>      
       <Principal />      

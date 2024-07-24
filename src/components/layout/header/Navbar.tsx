@@ -3,18 +3,18 @@ import styles from '@/styles/modules/Navbar.module.css'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from 'primereact/button'; 
+
 
 interface MobileMenuProps {
   mobile: boolean;
   setMobile: React.Dispatch<React.SetStateAction<boolean>>;
   setClassModule: React.Dispatch<React.SetStateAction<string>>;
-  
 }
 
 interface NaviListProps{
   classModule:string;
   setMobile: React.Dispatch<React.SetStateAction<boolean>>;
+  setClassModule: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <Logo />
       <MobileMenu mobile={mobile} setMobile={setMobile} setClassModule={setClassModule} />
-      <NavList setMobile={setMobile} classModule={classModule}/>      
+      <NavList setMobile={setMobile} classModule={classModule} setClassModule={setClassModule}/>      
     </nav>
   )
 }
@@ -41,14 +41,17 @@ const Logo = () => {
 
 const MobileMenu = React.memo(
   ({mobile, setMobile, setClassModule}: MobileMenuProps) => {
-    async function handleClick() {    
+
+    const handleClick = React.useCallback(async() => {
       setMobile(!mobile)
       if(mobile){
         setClassModule(styles.navlist)
       }else{      
         setClassModule(styles.navlistActive)
       }
-    }
+      
+    },[])
+
     return (
       <div onClick={handleClick} className={styles.mobileMenu}>
         {mobile ? (
@@ -61,8 +64,7 @@ const MobileMenu = React.memo(
   }
 )
 
-const NavList = React.memo(
-  ({setMobile, classModule}: NaviListProps) => { 
+const NavList = React.memo(({setMobile, classModule, setClassModule}: NaviListProps) => { 
     const router = useRouter()
   
     const links: {text: string, rota: string}[] = [
@@ -80,8 +82,10 @@ const NavList = React.memo(
               <Link href={link.rota} key={index} legacyBehavior>
                 <li className={(router.asPath !== link.rota)?
                   styles.itemlist : styles.itemlistActive}
-                  onClick={() => setMobile(false)}
-                >
+                  onClick={() => {
+                    setMobile(false)
+                    setClassModule(styles.navlist)
+                  }}>
                   <a>{link.text}</a>
                 </li>
               </Link>

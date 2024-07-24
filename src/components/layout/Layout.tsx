@@ -14,7 +14,7 @@ const Layout = ({children}: PropsLayout) => {
       <Header />
       <main style={{marginTop: '80px'}}>
         {children}
-        <ReactChatBot />
+        {/* <ReactChatBot /> */}
       </main>
     </>
   )

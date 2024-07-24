@@ -33,4 +33,4 @@ const CanvaMatrix = () => {
   }}></canvas>
 }
 
-export default CanvaMatrix
+export default React.memo(CanvaMatrix)
