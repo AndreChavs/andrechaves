@@ -9,7 +9,7 @@ interface CardProps{
   link:string;
 }
 
-const CardEffect = ({titulo, descricao, subTitulo, img, link}:CardProps) => {
+const CardEffect = ({titulo, descricao, subTitulo, img}:CardProps) => {
   return (
     <div className="card">
       <Image src={img.src} width={img.width} height={img.height} alt={titulo} />
@@ -19,7 +19,7 @@ const CardEffect = ({titulo, descricao, subTitulo, img, link}:CardProps) => {
         <p className="card-body">
           {descricao}
         </p>
-        <a href={link} className="button">
+        <a className="button">
           Saiba mais +
         </a>
       </div>

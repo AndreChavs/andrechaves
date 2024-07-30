@@ -34,7 +34,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <h1>Vamos Digitalizar Seu Negócio!</h1>
         <p>Entre em contato para descobrir como minhas soluções podem transformar suas ideias em realidade digital com nossos sistemas web personalizados</p>
-        <Button label="Fale com o Especialista" icon="pi pi-whatsapp" className={styles.btn}/>
+        <Button label="Fale com o Especialista" icon="pi pi-whatsapp" className={styles.btn} onClick={() => window.location.href = "https://wa.me/5593984394640"}/>
         <Container className={styles.fContainer}>
           <Grid04>
             <LogoSvg />

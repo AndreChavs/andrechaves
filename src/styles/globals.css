@@ -165,6 +165,32 @@ a {
   height: 32px;
 }
 
+/* styles/checkoutModal.css */
+.p-dialog .p-dialog-header {
+  background-color: #f5f5f5;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.p-dialog .p-dialog-content {
+  background-color: #ffffff;
+}
+
+.p-dialog .p-dialog-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+.p-dialog .p-button {
+  margin-right: 0.5rem;
+}
+
+.p-dialog .error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
 
 @keyframes slidein {
   from {

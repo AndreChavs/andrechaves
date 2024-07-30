@@ -8,7 +8,7 @@ const Particulas = () => {
     <section className={styles.principal}>
       <h1>Está pronto para transformar suas ideias em soluções tecnológicas eficazes ?</h1>
       <p>Está na hora de dar vida às suas ideias! Entre em contato e descubra como podemos ajudar!</p>
-      <Button label="Agende uma Consulta" icon="pi pi-whatsapp" className={styles.btn}/>
+      <Button label="Agende uma Consulta" icon="pi pi-whatsapp" className={styles.btn} onClick={() => window.location.href = "https://wa.me/5593984394640"}/>
       <ParticlesBG className={styles.particulas}/>
     </section> 
   )

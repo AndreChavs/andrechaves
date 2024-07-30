@@ -34,27 +34,22 @@ const Integracoes = () => {
             <li>Otimização em SEO</li>
             <li>Integração com ferramentas de Marketing</li>            
           </ul>
-          <Button label='Saiba mais +' className={styles.btn}/>
+          {/* <Button label='Saiba mais +' className={styles.btn}/> */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work" 
           contentStyle={{ background: 'var(--primary)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  var(--primary)' }}         
-          iconStyle={{ background: 'var(--primary)', color: '#fff', display:"flex", justifyContent:"center", alignItems:"center", fontSize:"2.5rem" }}
-          icon={<i className="fa-brands fa-mailchimp"></i>}
+          iconStyle={{ background: 'var(--primary)', color: '#fff', display:"flex", justifyContent:"center", alignItems:"center", fontSize:"2rem" }}
+          icon={<i className="fa-solid fa-microchip"></i>}
         >
-          <h3 className={styles.title}>Integração para Automação de Email Marketing</h3>
-          <h4 className={styles.subtitle}>Converta mais clientes com uma plataforma poderosa e intuitiva</h4>
-          <Image src='/emails.jpeg' width={300}  height={300} alt="Automação de email marketing" 
+          <h3 className={styles.title}>Integração de APIs para Sistemas Web e Mobile</h3>
+          <h4 className={styles.subtitle}>Conecte seu sistema a serviços externos com soluções de integração de APIs, garantindo uma comunicação eficiente e segura entre diferentes plataformas e aplicações.</h4>
+          <Image src='/api.png' width={300}  height={300} alt="Integração de APIs" 
           className={styles.img} 
           />
-          <ul className={styles.details}>
-            <li>Crie Emails Personalizados</li>
-            <li>Personalize suas Campanhas</li>
-            <li>Automatização de disparos</li>
-            <li>Rastreio, Analise e Otimização</li>            
-          </ul>
-          <Button label='Saiba mais +' className={styles.btn}/>
+          
+          {/* <Button label='Saiba mais +' className={styles.btn}/> */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work" 
@@ -63,19 +58,13 @@ const Integracoes = () => {
           iconStyle={{ background: '#0d0d0d', color: '#fff', display:"flex", justifyContent:"center", alignItems:"center", fontSize:"1.8rem" }}
           icon={<i className="fa-solid fa-robot"></i>}
         >
-          <h3 className={styles.title}>Automação com ChatBot</h3>
-          <h4 className={styles.subtitle}>criar chatbots inteligentes melhoram o atendimento ao cliente e aumentam a eficiência das suas campanhas de marketing.</h4>
+          <h3 className={styles.title}>Automação de Sistemas</h3>
+          <h4 className={styles.subtitle}>Otimize e simplifique processos complexos com soluções de automação de sistemas, aumentando a eficiência e reduzindo o tempo de execução de tarefas repetitivas e manuais.</h4>
           <Image src='/chatbot.jpg' width={300}  height={300} alt="Automação de email marketing" 
           className={styles.img} 
           />
-          <ul className={styles.details}>
-            <li>Integração com Plataformas: Facebook, instagram e WhatsApp Business</li>
-            <li>Mapeamento de Conversas</li>
-            <li>Melhoria do Atendimento ao Cliente</li>
-            <li>Qualificação de Leads</li>
-            <li>Aumento da taxa de Conversão</li>            
-          </ul>
-          <Button label='Saiba mais +' className={styles.btn}/>          
+          
+          {/* <Button label='Saiba mais +' className={styles.btn}/>           */}
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"         

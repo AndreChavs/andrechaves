@@ -4,7 +4,7 @@ import Container from '../layout/Container'
 import img1 from '../../../public/service0.jpeg'
 import img2 from '../../../public/service1.jpeg'
 import img3 from '../../../public/service2.jpeg'
-import img4 from '../../../public/service3.jpeg'
+// import img4 from '../../../public/service3.jpeg'
 import { Grid03 } from '../layout/Grids';
 import CardEffect from '../Cards/CardEffect';
 
@@ -27,18 +27,18 @@ const Servicos = () => {
     },
     {
       img:img3,
-      titulo:"Sistemas Web e Web Apps",
+      titulo:"Sistemas Web e Aplicativos iOS/android",
       subTitulo:"Soluções Personalizadas para Suas Necessidades",
       descricao:"Criação de sistemas web e aplicativos móveis sob medida para melhorar a eficiência e a produtividade do seu negócio. Integrações perfeitas, funcionalidades robustas e experiências de usuário excepcionais.",
       link:"/servicos/aplicacoes"
     },
-    {
-      img:img4,
-      titulo:"Automação de Marketing Digital",
-      subTitulo:"Automatize e Escale Seu Marketing",
-      descricao:"Implementação de estratégias de automação para otimizar suas campanhas de marketing digital. Economize tempo, aumente o engajamento e converta mais leads com fluxos de trabalho automatizados e personalizados.",
-      link:"/servicos/automacoes"
-    },
+    // {
+    //   img:img4,
+    //   titulo:"Automação de Marketing Digital",
+    //   subTitulo:"Automatize e Escale Seu Marketing",
+    //   descricao:"Implementação de estratégias de automação para otimizar suas campanhas de marketing digital. Economize tempo, aumente o engajamento e converta mais leads com fluxos de trabalho automatizados e personalizados.",
+    //   link:"/servicos/automacoes"
+    // },
   ]
 
  

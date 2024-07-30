@@ -8,14 +8,20 @@ import Testimonials from '@/components/sections/Testimonials';
 import Skills from '@/components/sections/Skills';
 import Container from '@/components/layout/Container';
 import CardProject from '@/components/Cards/CardProject';
-import NewsLetterForm from '@/components/forms/NewsLetterForm';
 import Integracoes from '@/components/sections/Integracoes';
 import Precos from '@/components/sections/Precos';
 import Particulas from '../components/Particulas';
-import Contato from '@/components/sections/Contato';
+import { loadStripe } from '@stripe/stripe-js';
+import { Button } from 'primereact/button';
+import { Elements, CardElement } from '@stripe/react-stripe-js';
+
+
+
+
 
 
 export default function Home() {
+
   
   const conteudos = [    
     {
@@ -23,12 +29,12 @@ export default function Home() {
       text:"Cada projeto é único e personalizado para atender às necessidades específicas do seu negócio."
     },
     {
-      title:"Suporte Contínuo:",
+      title:"Suporte 24/7 via Whatsapp:",
       text:"Suporte contínuo para garantir que seu site, landing pages e demais projetos estejam sempre atualizados e funcionando perfeitamente."
     },
     {
-      title:"Soluções Personalizadas",
-      text:"Criamos sistemas web sob medida para atender às necessidades únicas do seu negócio."
+      title:"Monitoramento Contínuo dos Serviços",
+      text:"Monitoramos continuamente os logs de acesso aos servidores para prevenção de ataques DOS e DDOS"
     },
     {
       title:"Design Responsivo",
@@ -83,9 +89,11 @@ export default function Home() {
         <Container style={{flexWrap:"wrap"}}>
           {conteudos.map((item) => <CardProject key={item.title} title={item.title} text={item.text} tipeCard={false}/>)}
         </Container>
-      </section>      
+      </section>
       <Particulas />
+      <Precos />      
       <Testimonials />
+      
       <Footer />      
     </>
   )

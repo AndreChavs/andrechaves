@@ -55,9 +55,7 @@ background: linear-gradient(180deg, rgba(13,13,13,1) 85%, rgba(242,242,242,1) 10
   color: #fff;
   border-radius: 50%;
     height: 150px;
-    width: 150px;
-    /* display: inline-block; */
-    /* padding-top: 46px; */
+    width: 150px;   
     display: flex;
     justify-content: center;   
     align-items: center;
@@ -65,8 +63,8 @@ background: linear-gradient(180deg, rgba(13,13,13,1) 85%, rgba(242,242,242,1) 10
 }
 
 .pricing-cost {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 500;
     line-height: 1;
 }
 
@@ -147,9 +145,9 @@ figure {
 }
 
 .pricing-column-wrapper {
-  max-width: 271px;
+  max-width: 270px;
   text-align: center;
-  margin: 0 1rem;
+  margin: 0 .5rem;
 }
 
 .pricing-row-title {
@@ -167,6 +165,7 @@ figure {
 .pricing-row{
   border-top: 1px solid #7273723b;
   padding: .5rem 1rem;
+  font-size: .85rem;
 }
 
 
