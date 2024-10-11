@@ -91,7 +91,7 @@ export default function Home() {
         </Container>
       </section>
       <Particulas />
-      <Precos />      
+      {/* <Precos />       */}
       <Testimonials />
       
       <Footer />      
