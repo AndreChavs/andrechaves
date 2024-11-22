@@ -66,6 +66,9 @@
 
 .containerWrap{
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   z-index: 1;
 }
 
@@ -100,6 +103,8 @@
 .icons i:hover{
   transform: scale(1.2);  
 }
+
+
 
 
 

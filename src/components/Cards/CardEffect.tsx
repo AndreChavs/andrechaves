@@ -19,7 +19,7 @@ const CardEffect = ({titulo, descricao, subTitulo, img}:CardProps) => {
         <p className="card-body">
           {descricao}
         </p>
-        <a className="button">
+        <a className="button" href=''>
           Saiba mais +
         </a>
       </div>

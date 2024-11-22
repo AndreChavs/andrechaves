@@ -19,7 +19,7 @@ const Me = () => {
 
       const time = setTimeout(() => {
         setIsClicked(false)
-      }, 9000);
+      }, 15000);
 
       return () => clearTimeout(time)
     }
@@ -28,9 +28,9 @@ const Me = () => {
   return (
     <section id='Me' className={styles.section}>
       <h1 className={styles.title}>O que eu faço ?</h1>
-      <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Automação de Marketing Digital:</h2> <p>Desenvolvimento de sistemas automatizados para otimizar campanhas de marketing, aumentar a eficácia e reduzir o tempo gasto em tarefas manuais.</p></div>
+      <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Automação de Marketing Digital na Web:</h2> <p>Desenvolvimento de sistemas automatizados para otimizar campanhas de marketing, aumentar a eficácia e reduzir o tempo gasto em tarefas manuais.</p></div>
       <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Integrações e Desenvolvimento de Sistemas:</h2> <p>Criação de soluções de software sob medida para atender às necessidades específicas do seu negócio.</p></div>
-      <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Criação de Sites e Landing Pages:</h2> <p>Desenvolvo sites personalizados e responsivos, além de landing pages eficazes que capturam leads e aumentam suas taxas de conversão.</p> </div>
+      <div className={`${styles.ballon} ${isClicked ? styles.clicked : ''}`}><h2>Consultoria em Desenvolvimento e Licença de Software:</h2> <p>Transforme sua ideia em software com soluções personalizadas e seguras, garantindo a conformidade legal através de licenciamento estratégico.</p> </div>
       
       <ReactTooltip
         id="my-tooltip-1"
@@ -51,7 +51,7 @@ const Me = () => {
         <div className={`${styles.chatbot_loading} ${isHovered ? styles.hovered : ''}`}></div>
       </div>      
       <Image src={imgPerfil.src} width={imgPerfil.width} height={imgPerfil.height} alt="perfil André Chaves Dev" className={styles.img}/>
-      <p><i>A automação inteligente é a chave para desbloquear o verdadeiro potencial do seu negócio online.</i> - <strong>André Chaves</strong></p>
+      <p><i>A chave para o sucesso digital é uma combinação de sistemas personalizados e estratégias de licenciamento eficazes para garantir sua legalidade.</i><br></br> - <strong>André Chaves</strong></p>
     </section>
   )
 }

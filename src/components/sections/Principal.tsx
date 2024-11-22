@@ -1,13 +1,11 @@
 import React from 'react'
-import dynamic from 'next/dynamic';
 import styles from '@/styles/modules/Principal.module.css'
 import Container from '../layout/Container'
 import { Grid06 } from '../layout/Grids'
 import Link from 'next/link'
 import Typed from 'typed.js'
 import CanvaMatrix from '../CanvaMatrix';
-import Spline from '@splinetool/react-spline';
-import Loading from '../Loading';
+import Image from 'next/image'
 
 const icons = [
   {
@@ -44,7 +42,7 @@ const Principal = () => {
     },1500)
 
     const typing = new Typed(el.current, {
-      strings: ["Analista de Sistemas", "Desenvolvedor de Sistemas", "Especialista em Automação de Marketing Digital"],
+      strings: ["Analista e Desenvolvedor de Sistemas", "FullStack Developer"],
       typeSpeed: 50,
       loop: true
     });
@@ -67,7 +65,9 @@ const Principal = () => {
               <h1 className={styles.txtNome}>Olá, Sou André Chaves</h1>
               <p className={styles.txtAnimation}><span ref={el} /></p>            
               <p className={styles.txtParagraph}>
-              Eu ajudo empresas a maximizar seu potencial online através da automação inteligente e soluções tecnológicas personalizadas. Com 4 anos de experiência na área de desenvolvimento de sistemas e marketing digital, minha missão é criar estratégias e ferramentas que impulsionem o crescimento, aumentem a eficiência e gerem resultados tangíveis.  
+              <strong>Transformo ideias em soluções digitais de impacto, unindo tecnologia, design e propriedade intelectual.</strong>
+              <br></br>
+              Com mais de 5 anos de experiência no desenvolvimento de sites, sistemas e aplicativos, minha missão é entregar projetos personalizados que vão além do código: eles fortalecem sua marca, protegem sua propriedade intelectual e impulsionam o seu negócio para o próximo nível.  
               </p>            
               <div className={styles.containerIcons}>
                 {icons.map((icon, index) => {
@@ -81,13 +81,7 @@ const Principal = () => {
                 })}                
               </div>
             </div>
-          </Grid06>
-          <Grid06 className={gridIActive}>        
-            <Spline 
-              scene='https://prod.spline.design/0B18tVNKGpOur4PC/scene.splinecode'            
-              className={styles.iframe}
-            />        
-          </Grid06>        
+          </Grid06>          
         </>     
       </Container>      
     </section>

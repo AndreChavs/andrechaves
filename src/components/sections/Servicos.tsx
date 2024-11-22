@@ -2,9 +2,9 @@ import React from 'react'
 import styles from '@/styles/modules/Servicos.module.css'
 import Container from '../layout/Container'
 import img1 from '../../../public/service0.jpeg'
-import img2 from '../../../public/service1.jpeg'
+import img2 from '../../../public/consultoria.jpeg'
 import img3 from '../../../public/service2.jpeg'
-// import img4 from '../../../public/service3.jpeg'
+import img4 from '../../../public/pi-image.jpg'
 import { Grid03 } from '../layout/Grids';
 import CardEffect from '../Cards/CardEffect';
 
@@ -17,14 +17,7 @@ const Servicos = () => {
       subTitulo:"Desenvolva Sua Presença Online",
       descricao:"Projetos de sites personalizados, responsivos e otimizados para SEO. Garanto que seu site seja visualmente atraente, fácil de navegar e alinhado com a identidade da sua marca.",
       link:"/servicos/sites"
-    },
-    {
-      img:img2,
-      titulo:"Landing Pages",
-      subTitulo:"Converta Visitantes em Clientes",
-      descricao:"Desenvolvimento de landing pages eficazes que capturam leads e aumentam suas taxas de conversão. Designs atraentes e estratégias de conteúdo para maximizar o impacto das suas campanhas de marketing.",
-      link:"/servicos/sites"
-    },
+    },    
     {
       img:img3,
       titulo:"Sistemas Web e Aplicativos iOS/android",
@@ -32,19 +25,26 @@ const Servicos = () => {
       descricao:"Criação de sistemas web e aplicativos móveis sob medida para melhorar a eficiência e a produtividade do seu negócio. Integrações perfeitas, funcionalidades robustas e experiências de usuário excepcionais.",
       link:"/servicos/aplicacoes"
     },
-    // {
-    //   img:img4,
-    //   titulo:"Automação de Marketing Digital",
-    //   subTitulo:"Automatize e Escale Seu Marketing",
-    //   descricao:"Implementação de estratégias de automação para otimizar suas campanhas de marketing digital. Economize tempo, aumente o engajamento e converta mais leads com fluxos de trabalho automatizados e personalizados.",
-    //   link:"/servicos/automacoes"
-    // },
+    {
+      img:img2,
+      titulo:"Consultoria em Desenvolvimento de Sistemas",
+      subTitulo:"Transforme suas necessidades tecnológicas em soluções personalizadas",
+      descricao:"criar soluções digitais sob medida para o seu negócio. Desde a análise detalhada de requisitos até a implementação de sistemas robustos, nosso foco é garantir que sua empresa utilize as tecnologias mais avançadas e eficientes para alcançar resultados duradouros.",
+      link:"/servicos/sites"
+    },
+    {
+      img:img4,
+      titulo:"Consultoria e Elaboração de Contratos de Licenciamento",
+      subTitulo:"Garanta a proteção legal do seu software",
+      descricao:"ajudo você a escolher o modelo de licença ideal (exclusivo, open-source, comercial) e a formalizar acordos claros, equilibrados e juridicamente seguros. Com uma estratégia de licenciamento bem definida, você maximiza a utilização de sua propriedade intelectual, evitando riscos e garantindo que seus direitos sejam respeitados.",
+      link:"/servicos/automacoes"
+    },
   ]
 
  
   return (
     <section className={styles.section}>
-      <h1 className={styles.title}>Meus Serviços</h1>
+      <h1 className={styles.title}>O que fazemos ?</h1>
       <Container className={styles.containerSobre}>
         {dataService.map((item) => {
           return (
